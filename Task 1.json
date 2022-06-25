@@ -1,0 +1,61 @@
+https://api.nytimes.com/svc/books/v3/lists.json
+
+1. 401 unauthorized 
+2. 400 bad request
+3. 200 ok
+4. {
+    "status": "OK",
+    "copyright": "Copyright (c) 2022 The New York Times Company.  All Rights Reserved.",
+    "num_results": 1,
+    "last_modified": "2022-06-22T22:05:57-04:00",
+    "results": [
+        {
+            "list_name": "Hardcover Nonfiction",
+            "display_name": "Hardcover Nonfiction",
+            "bestsellers_date": "2022-06-18",
+            "published_date": "2022-07-03",
+            "rank": 4,
+            "rank_last_week": 1,
+            "weeks_on_list": 2,
+            "asterisk": 0,
+            "dagger": 0,
+            "amazon_product_url": "https://www.amazon.com/dp/0316397539?tag=NYTBSREV-20",
+            "isbns": [
+                {
+                    "isbn10": "0316397539",
+                    "isbn13": "9780316397537"
+                },
+                {
+                    "isbn10": "0316397636",
+                    "isbn13": "9780316397636"
+                }
+            ],
+            "book_details": [
+                {
+                    "title": "JAMES PATTERSON",
+                    "description": "The author’s life, from growing up in small-town New York to working in the advertising industry to becoming a successful storyteller.",
+                    "contributor": "by James Patterson",
+                    "author": "James Patterson",
+                    "contributor_note": "",
+                    "price": "0.00",
+                    "age_group": "",
+                    "publisher": "Little, Brown",
+                    "primary_isbn13": "9780316397537",
+                    "primary_isbn10": "0316397539"
+                }
+            ],
+            "reviews": [
+                {
+                    "book_review_link": "",
+                    "first_chapter_link": "",
+                    "sunday_review_link": "",
+                    "article_chapter_link": ""
+                }
+            ]
+        }
+    ]
+}
+5. Options
+6. PostmanRuntime/7.29.0
+7. Simply edit the User-Agent key value to 'My custom agent'
+8. Very fine 
