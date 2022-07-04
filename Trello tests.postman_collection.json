@@ -1,0 +1,1735 @@
+{
+	"info": {
+		"_postman_id": "f9751914-48cb-4e0b-b656-34b9ebe727ad",
+		"name": "Trello tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21076934"
+	},
+	"item": [
+		{
+			"name": "Create board",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"let jsonData = pm.response.json();\r",
+							"\r",
+							"pm.test(\"check new board\", function () {\r",
+							"    //pm.expect(jsonData.name).to.eql(\"Trello Board\");\r",
+							"    pm.expect(jsonData.closed).to.be.false;\r",
+							"    pm.expect(jsonData.prefs.comments).to.eql(\"members\");\r",
+							"    pm.expect(jsonData.prefs.permissionLevel).to.eql(\"private\");\r",
+							"});\r",
+							"\r",
+							"pm.environment.set(\"boardId\", jsonData.id);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"//pm.environment.set(\"boardName\", parseInt(Math.random()*100)+1);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/1/boards?name={{boardName}}&key={{trello_key}}&token={{trello_token}}",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"1",
+						"boards"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "{{boardName}}"
+						},
+						{
+							"key": "key",
+							"value": "{{trello_key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{trello_token}}"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create board result",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/boards?name=Trello Board&key={{trello_key}}&token={{trello_token}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"boards"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Trello Board"
+								},
+								{
+									"key": "key",
+									"value": "{{trello_key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{trello_token}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Dns-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Surrogate-Control",
+							"value": "no-store"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, must-revalidate, no-cache, no-store"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 01 Jan 1970 00:00:00"
+						},
+						{
+							"key": "X-Trello-Version",
+							"value": "1.139754.0"
+						},
+						{
+							"key": "X-Trello-Environment",
+							"value": "Production"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Authorization, Accept, Content-Type"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Token-Interval-Ms",
+							"value": "10000"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Token-Max",
+							"value": "100"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Token-Remaining",
+							"value": "99"
+						},
+						{
+							"key": "X-Rate-Limit-Db-Query-Time-Interval-Ms",
+							"value": "600000"
+						},
+						{
+							"key": "X-Rate-Limit-Db-Query-Time-Max",
+							"value": "7200000"
+						},
+						{
+							"key": "X-Rate-Limit-Db-Query-Time-Remaining",
+							"value": "7199990"
+						},
+						{
+							"key": "X-Rate-Limit-Action-Interval-Ms",
+							"value": "3600000"
+						},
+						{
+							"key": "X-Rate-Limit-Action-Max",
+							"value": "15000"
+						},
+						{
+							"key": "X-Rate-Limit-Action-Remaining",
+							"value": "14999"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Key-Interval-Ms",
+							"value": "10000"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Key-Max",
+							"value": "300"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Key-Remaining",
+							"value": "299"
+						},
+						{
+							"key": "X-Rate-Limit-Member-Interval-Ms",
+							"value": "10000"
+						},
+						{
+							"key": "X-Rate-Limit-Member-Max",
+							"value": "375"
+						},
+						{
+							"key": "X-Rate-Limit-Member-Remaining",
+							"value": "374"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly"
+						},
+						{
+							"key": "X-Server-Time",
+							"value": "1656192000536"
+						},
+						{
+							"key": "X-Trello-Api-Org-Selected",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 25 Jun 2022 21:20:00 GMT"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "X-Envoy-Upstream-Service-Time",
+							"value": "237"
+						},
+						{
+							"key": "Expect-Ct",
+							"value": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; preload"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Atl-Traceid",
+							"value": "b26c0c398344f976"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}"
+						},
+						{
+							"key": "Server",
+							"value": "globaledge-envoy"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"62b77c003c70e44fade8ddcc\",\n    \"name\": \"Trello Board\",\n    \"desc\": \"\",\n    \"descData\": null,\n    \"closed\": false,\n    \"idOrganization\": \"62984234f7ce44066ee4ff3a\",\n    \"idEnterprise\": null,\n    \"pinned\": false,\n    \"url\": \"https://trello.com/b/MwfoBhIw/trello-board\",\n    \"shortUrl\": \"https://trello.com/b/MwfoBhIw\",\n    \"prefs\": {\n        \"permissionLevel\": \"private\",\n        \"hideVotes\": false,\n        \"voting\": \"disabled\",\n        \"comments\": \"members\",\n        \"invitations\": \"members\",\n        \"selfJoin\": true,\n        \"cardCovers\": true,\n        \"isTemplate\": false,\n        \"cardAging\": \"regular\",\n        \"calendarFeedEnabled\": false,\n        \"hiddenPluginBoardButtons\": [],\n        \"switcherViews\": [\n            {\n                \"_id\": \"62b77c003c70e44fade8ddcd\",\n                \"viewType\": \"Board\",\n                \"enabled\": true\n            },\n            {\n                \"_id\": \"62b77c003c70e44fade8ddce\",\n                \"viewType\": \"Table\",\n                \"enabled\": true\n            },\n            {\n                \"_id\": \"62b77c003c70e44fade8ddcf\",\n                \"viewType\": \"Calendar\",\n                \"enabled\": false\n            },\n            {\n                \"_id\": \"62b77c003c70e44fade8ddd0\",\n                \"viewType\": \"Dashboard\",\n                \"enabled\": false\n            },\n            {\n                \"_id\": \"62b77c003c70e44fade8ddd1\",\n                \"viewType\": \"Timeline\",\n                \"enabled\": false\n            },\n            {\n                \"_id\": \"62b77c003c70e44fade8ddd2\",\n                \"viewType\": \"Map\",\n                \"enabled\": false\n            }\n        ],\n        \"background\": \"blue\",\n        \"backgroundColor\": \"#0079BF\",\n        \"backgroundImage\": null,\n        \"backgroundImageScaled\": null,\n        \"backgroundTile\": false,\n        \"backgroundBrightness\": \"dark\",\n        \"backgroundBottomColor\": \"#0079BF\",\n        \"backgroundTopColor\": \"#0079BF\",\n        \"canBePublic\": true,\n        \"canBeEnterprise\": true,\n        \"canBeOrg\": true,\n        \"canBePrivate\": true,\n        \"canInvite\": true\n    },\n    \"labelNames\": {\n        \"green\": \"\",\n        \"yellow\": \"\",\n        \"orange\": \"\",\n        \"red\": \"\",\n        \"purple\": \"\",\n        \"blue\": \"\",\n        \"sky\": \"\",\n        \"lime\": \"\",\n        \"pink\": \"\",\n        \"black\": \"\",\n        \"green_dark\": \"\",\n        \"yellow_dark\": \"\",\n        \"orange_dark\": \"\",\n        \"red_dark\": \"\",\n        \"purple_dark\": \"\",\n        \"blue_dark\": \"\",\n        \"sky_dark\": \"\",\n        \"lime_dark\": \"\",\n        \"pink_dark\": \"\",\n        \"black_dark\": \"\",\n        \"green_light\": \"\",\n        \"yellow_light\": \"\",\n        \"orange_light\": \"\",\n        \"red_light\": \"\",\n        \"purple_light\": \"\",\n        \"blue_light\": \"\",\n        \"sky_light\": \"\",\n        \"lime_light\": \"\",\n        \"pink_light\": \"\",\n        \"black_light\": \"\"\n    },\n    \"limits\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Todo list on my board",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"let jsonData = pm.response.json();\r",
+							"\r",
+							"pm.environment.set(\"TodoListId\", jsonData.id);\r",
+							"\r",
+							"console.log(jsonData);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/1/boards/{{boardId}}/lists?key={{trello_key}}&token={{trello_token}}&name=TO-DO",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"1",
+						"boards",
+						"{{boardId}}",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "pos",
+							"value": "bottom",
+							"disabled": true
+						},
+						{
+							"key": "key",
+							"value": "{{trello_key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{trello_token}}"
+						},
+						{
+							"key": "name",
+							"value": "TO-DO"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Todo list on my board result",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/boards/{{board_id}}/lists?name=TODO&key={{trello_key}}&token={{trello_token}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"boards",
+								"{{board_id}}",
+								"lists"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "TODO"
+								},
+								{
+									"key": "pos",
+									"value": "bottom",
+									"disabled": true
+								},
+								{
+									"key": "key",
+									"value": "{{trello_key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{trello_token}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Dns-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Surrogate-Control",
+							"value": "no-store"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, must-revalidate, no-cache, no-store"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 01 Jan 1970 00:00:00"
+						},
+						{
+							"key": "X-Trello-Version",
+							"value": "1.139754.0"
+						},
+						{
+							"key": "X-Trello-Environment",
+							"value": "Production"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Authorization, Accept, Content-Type"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Token-Interval-Ms",
+							"value": "10000"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Token-Max",
+							"value": "100"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Token-Remaining",
+							"value": "99"
+						},
+						{
+							"key": "X-Rate-Limit-Db-Query-Time-Interval-Ms",
+							"value": "600000"
+						},
+						{
+							"key": "X-Rate-Limit-Db-Query-Time-Max",
+							"value": "7200000"
+						},
+						{
+							"key": "X-Rate-Limit-Db-Query-Time-Remaining",
+							"value": "7199990"
+						},
+						{
+							"key": "X-Rate-Limit-Action-Interval-Ms",
+							"value": "3600000"
+						},
+						{
+							"key": "X-Rate-Limit-Action-Max",
+							"value": "15000"
+						},
+						{
+							"key": "X-Rate-Limit-Action-Remaining",
+							"value": "14999"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Key-Interval-Ms",
+							"value": "10000"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Key-Max",
+							"value": "300"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Key-Remaining",
+							"value": "299"
+						},
+						{
+							"key": "X-Rate-Limit-Member-Interval-Ms",
+							"value": "10000"
+						},
+						{
+							"key": "X-Rate-Limit-Member-Max",
+							"value": "375"
+						},
+						{
+							"key": "X-Rate-Limit-Member-Remaining",
+							"value": "374"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly"
+						},
+						{
+							"key": "X-Server-Time",
+							"value": "1656192158731"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 25 Jun 2022 21:22:38 GMT"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "X-Envoy-Upstream-Service-Time",
+							"value": "158"
+						},
+						{
+							"key": "Expect-Ct",
+							"value": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; preload"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Atl-Traceid",
+							"value": "e064e43c7d5b1697"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}"
+						},
+						{
+							"key": "Server",
+							"value": "globaledge-envoy"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"62b77c9eb1afd77b8c644c3c\",\n    \"name\": \"TODO\",\n    \"closed\": false,\n    \"idBoard\": \"62b77c003c70e44fade8ddcc\",\n    \"pos\": 8192,\n    \"limits\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Done list on my board",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"const jsonData = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(jsonData.name).to.eql(\"DO-NE\");\r",
+							"});\r",
+							"\r",
+							"pm.environment.set(\"DoneListId\", jsonData.id);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/1/boards/{{boardId}}/lists?key={{trello_key}}&token={{trello_token}}&name=DO-NE",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"1",
+						"boards",
+						"{{boardId}}",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "pos",
+							"value": "bottom",
+							"disabled": true
+						},
+						{
+							"key": "key",
+							"value": "{{trello_key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{trello_token}}"
+						},
+						{
+							"key": "name",
+							"value": "DO-NE"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Done list on my board result",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/boards/{{board_id}}/lists?name=DONE&key={{trello_key}}&token={{trello_token}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"boards",
+								"{{board_id}}",
+								"lists"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "DONE"
+								},
+								{
+									"key": "pos",
+									"value": "bottom",
+									"disabled": true
+								},
+								{
+									"key": "key",
+									"value": "{{trello_key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{trello_token}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Dns-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Surrogate-Control",
+							"value": "no-store"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, must-revalidate, no-cache, no-store"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 01 Jan 1970 00:00:00"
+						},
+						{
+							"key": "X-Trello-Version",
+							"value": "1.139754.0"
+						},
+						{
+							"key": "X-Trello-Environment",
+							"value": "Production"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Authorization, Accept, Content-Type"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Token-Interval-Ms",
+							"value": "10000"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Token-Max",
+							"value": "100"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Token-Remaining",
+							"value": "99"
+						},
+						{
+							"key": "X-Rate-Limit-Db-Query-Time-Interval-Ms",
+							"value": "600000"
+						},
+						{
+							"key": "X-Rate-Limit-Db-Query-Time-Max",
+							"value": "7200000"
+						},
+						{
+							"key": "X-Rate-Limit-Db-Query-Time-Remaining",
+							"value": "7199990"
+						},
+						{
+							"key": "X-Rate-Limit-Action-Interval-Ms",
+							"value": "3600000"
+						},
+						{
+							"key": "X-Rate-Limit-Action-Max",
+							"value": "15000"
+						},
+						{
+							"key": "X-Rate-Limit-Action-Remaining",
+							"value": "14999"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Key-Interval-Ms",
+							"value": "10000"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Key-Max",
+							"value": "300"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Key-Remaining",
+							"value": "299"
+						},
+						{
+							"key": "X-Rate-Limit-Member-Interval-Ms",
+							"value": "10000"
+						},
+						{
+							"key": "X-Rate-Limit-Member-Max",
+							"value": "375"
+						},
+						{
+							"key": "X-Rate-Limit-Member-Remaining",
+							"value": "374"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly"
+						},
+						{
+							"key": "X-Server-Time",
+							"value": "1656192181186"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 25 Jun 2022 21:23:01 GMT"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "X-Envoy-Upstream-Service-Time",
+							"value": "173"
+						},
+						{
+							"key": "Expect-Ct",
+							"value": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; preload"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Atl-Traceid",
+							"value": "1abcffc4791a98ff"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}"
+						},
+						{
+							"key": "Server",
+							"value": "globaledge-envoy"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"62b77cb5b2aad92aba2b057a\",\n    \"name\": \"TODO\",\n    \"closed\": false,\n    \"idBoard\": \"62b77c003c70e44fade8ddcc\",\n    \"pos\": 4096,\n    \"limits\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "Create card inside todo list",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"const jsonData = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(jsonData.name).to.include(\"learn postman\");\r",
+							"});\r",
+							"\r",
+							"pm.environment.set(\"CardId\", jsonData.id);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/1/cards?key={{trello_key}}&token={{trello_token}}&name=learn postman&idList={{TodoListId}}",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{trello_key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{trello_token}}"
+						},
+						{
+							"key": "idMembers",
+							"value": "<top, bottom, left, right>",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "learn postman"
+						},
+						{
+							"key": "idList",
+							"value": "{{TodoListId}}"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create card inside todo list result",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/cards?idList=62b77c9eb1afd77b8c644c3c&key={{trello_key}}&token={{trello_token}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"cards"
+							],
+							"query": [
+								{
+									"key": "idList",
+									"value": "62b77c9eb1afd77b8c644c3c"
+								},
+								{
+									"key": "key",
+									"value": "{{trello_key}}"
+								},
+								{
+									"key": "idMembers",
+									"value": "<top, bottom, left, right>",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "{{trello_token}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Dns-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Surrogate-Control",
+							"value": "no-store"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, must-revalidate, no-cache, no-store"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 01 Jan 1970 00:00:00"
+						},
+						{
+							"key": "X-Trello-Version",
+							"value": "1.139754.0"
+						},
+						{
+							"key": "X-Trello-Environment",
+							"value": "Production"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Authorization, Accept, Content-Type"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Token-Interval-Ms",
+							"value": "10000"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Token-Max",
+							"value": "100"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Token-Remaining",
+							"value": "99"
+						},
+						{
+							"key": "X-Rate-Limit-Db-Query-Time-Interval-Ms",
+							"value": "600000"
+						},
+						{
+							"key": "X-Rate-Limit-Db-Query-Time-Max",
+							"value": "7200000"
+						},
+						{
+							"key": "X-Rate-Limit-Db-Query-Time-Remaining",
+							"value": "7199990"
+						},
+						{
+							"key": "X-Rate-Limit-Action-Interval-Ms",
+							"value": "3600000"
+						},
+						{
+							"key": "X-Rate-Limit-Action-Max",
+							"value": "15000"
+						},
+						{
+							"key": "X-Rate-Limit-Action-Remaining",
+							"value": "14999"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Key-Interval-Ms",
+							"value": "10000"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Key-Max",
+							"value": "300"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Key-Remaining",
+							"value": "299"
+						},
+						{
+							"key": "X-Rate-Limit-Member-Interval-Ms",
+							"value": "10000"
+						},
+						{
+							"key": "X-Rate-Limit-Member-Max",
+							"value": "375"
+						},
+						{
+							"key": "X-Rate-Limit-Member-Remaining",
+							"value": "374"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly"
+						},
+						{
+							"key": "X-Server-Time",
+							"value": "1656193035613"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 25 Jun 2022 21:37:15 GMT"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "X-Envoy-Upstream-Service-Time",
+							"value": "240"
+						},
+						{
+							"key": "Expect-Ct",
+							"value": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; preload"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Atl-Traceid",
+							"value": "2b92661138eb92e2"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}"
+						},
+						{
+							"key": "Server",
+							"value": "globaledge-envoy"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"attachments\": [],\n    \"stickers\": [],\n    \"checkItemStates\": null,\n    \"id\": \"62b7800b415469339565f2c5\",\n    \"badges\": {\n        \"attachmentsByType\": {\n            \"trello\": {\n                \"board\": 0,\n                \"card\": 0\n            }\n        },\n        \"location\": false,\n        \"votes\": 0,\n        \"viewingMemberVoted\": false,\n        \"subscribed\": false,\n        \"fogbugz\": \"\",\n        \"checkItems\": 0,\n        \"checkItemsChecked\": 0,\n        \"checkItemsEarliestDue\": null,\n        \"comments\": 0,\n        \"attachments\": 0,\n        \"description\": false,\n        \"due\": null,\n        \"dueComplete\": false,\n        \"start\": null\n    },\n    \"closed\": false,\n    \"dueComplete\": false,\n    \"dateLastActivity\": \"2022-06-25T21:37:15.547Z\",\n    \"desc\": \"\",\n    \"descData\": {\n        \"emoji\": {}\n    },\n    \"due\": null,\n    \"dueReminder\": null,\n    \"email\": null,\n    \"idBoard\": \"62b77c003c70e44fade8ddcc\",\n    \"idChecklists\": [],\n    \"idList\": \"62b77c9eb1afd77b8c644c3c\",\n    \"idMembers\": [],\n    \"idMembersVoted\": [],\n    \"idShort\": 1,\n    \"idAttachmentCover\": null,\n    \"labels\": [],\n    \"idLabels\": [],\n    \"manualCoverAttachment\": false,\n    \"name\": \"\",\n    \"pos\": 16384,\n    \"shortLink\": \"bUXpsuS3\",\n    \"shortUrl\": \"https://trello.com/c/bUXpsuS3\",\n    \"start\": null,\n    \"subscribed\": false,\n    \"url\": \"https://trello.com/c/bUXpsuS3/1--\",\n    \"cover\": {\n        \"idAttachment\": null,\n        \"color\": null,\n        \"idUploadedBackground\": null,\n        \"size\": \"normal\",\n        \"brightness\": \"dark\",\n        \"idPlugin\": null\n    },\n    \"isTemplate\": false,\n    \"cardRole\": null,\n    \"limits\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "Move Todo Card To Done",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/1/cards/{{CardId}}?key={{trello_key}}&token={{trello_token}}&idList={{DoneListId}}",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"1",
+						"cards",
+						"{{CardId}}"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{trello_key}}"
+						},
+						{
+							"key": "idMembers",
+							"value": "<top, bottom, left, right>",
+							"disabled": true
+						},
+						{
+							"key": "token",
+							"value": "{{trello_token}}"
+						},
+						{
+							"key": "idList",
+							"value": "{{DoneListId}}"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Move Todo Card To Done result",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/cards/62b7800b415469339565f2c5?idList=62b77cb5b2aad92aba2b057a&key={{trello_key}}&token={{trello_token}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"cards",
+								"62b7800b415469339565f2c5"
+							],
+							"query": [
+								{
+									"key": "idList",
+									"value": "62b77cb5b2aad92aba2b057a"
+								},
+								{
+									"key": "key",
+									"value": "{{trello_key}}"
+								},
+								{
+									"key": "idMembers",
+									"value": "<top, bottom, left, right>",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "{{trello_token}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Dns-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Surrogate-Control",
+							"value": "no-store"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, must-revalidate, no-cache, no-store"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 01 Jan 1970 00:00:00"
+						},
+						{
+							"key": "X-Trello-Version",
+							"value": "1.139754.0"
+						},
+						{
+							"key": "X-Trello-Environment",
+							"value": "Production"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Authorization, Accept, Content-Type"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Token-Interval-Ms",
+							"value": "10000"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Token-Max",
+							"value": "100"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Token-Remaining",
+							"value": "99"
+						},
+						{
+							"key": "X-Rate-Limit-Db-Query-Time-Interval-Ms",
+							"value": "600000"
+						},
+						{
+							"key": "X-Rate-Limit-Db-Query-Time-Max",
+							"value": "7200000"
+						},
+						{
+							"key": "X-Rate-Limit-Db-Query-Time-Remaining",
+							"value": "7199990"
+						},
+						{
+							"key": "X-Rate-Limit-Action-Interval-Ms",
+							"value": "3600000"
+						},
+						{
+							"key": "X-Rate-Limit-Action-Max",
+							"value": "15000"
+						},
+						{
+							"key": "X-Rate-Limit-Action-Remaining",
+							"value": "14999"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Key-Interval-Ms",
+							"value": "10000"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Key-Max",
+							"value": "300"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Key-Remaining",
+							"value": "299"
+						},
+						{
+							"key": "X-Rate-Limit-Member-Interval-Ms",
+							"value": "10000"
+						},
+						{
+							"key": "X-Rate-Limit-Member-Max",
+							"value": "375"
+						},
+						{
+							"key": "X-Rate-Limit-Member-Remaining",
+							"value": "374"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly"
+						},
+						{
+							"key": "X-Server-Time",
+							"value": "1656193344665"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 25 Jun 2022 21:42:24 GMT"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "X-Envoy-Upstream-Service-Time",
+							"value": "203"
+						},
+						{
+							"key": "Expect-Ct",
+							"value": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; preload"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Atl-Traceid",
+							"value": "e0a2bf534bae83f3"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}"
+						},
+						{
+							"key": "Server",
+							"value": "globaledge-envoy"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"checkItemStates\": null,\n    \"id\": \"62b7800b415469339565f2c5\",\n    \"badges\": {\n        \"attachmentsByType\": {\n            \"trello\": {\n                \"board\": 0,\n                \"card\": 0\n            }\n        },\n        \"location\": false,\n        \"votes\": 0,\n        \"viewingMemberVoted\": false,\n        \"subscribed\": false,\n        \"fogbugz\": \"\",\n        \"checkItems\": 0,\n        \"checkItemsChecked\": 0,\n        \"checkItemsEarliestDue\": null,\n        \"comments\": 0,\n        \"attachments\": 0,\n        \"description\": false,\n        \"due\": null,\n        \"dueComplete\": false,\n        \"start\": null\n    },\n    \"closed\": false,\n    \"dueComplete\": false,\n    \"dateLastActivity\": \"2022-06-25T21:42:24.619Z\",\n    \"desc\": \"\",\n    \"descData\": {\n        \"emoji\": {}\n    },\n    \"due\": null,\n    \"dueReminder\": null,\n    \"email\": null,\n    \"idBoard\": \"62b77c003c70e44fade8ddcc\",\n    \"idChecklists\": [],\n    \"idList\": \"62b77cb5b2aad92aba2b057a\",\n    \"idMembers\": [],\n    \"idMembersVoted\": [],\n    \"idShort\": 1,\n    \"idAttachmentCover\": null,\n    \"labels\": [],\n    \"idLabels\": [],\n    \"manualCoverAttachment\": false,\n    \"name\": \"\",\n    \"pos\": 16384,\n    \"shortLink\": \"bUXpsuS3\",\n    \"shortUrl\": \"https://trello.com/c/bUXpsuS3\",\n    \"start\": null,\n    \"subscribed\": false,\n    \"url\": \"https://trello.com/c/bUXpsuS3/1--\",\n    \"cover\": {\n        \"idAttachment\": null,\n        \"color\": null,\n        \"idUploadedBackground\": null,\n        \"size\": \"normal\",\n        \"brightness\": \"dark\",\n        \"idPlugin\": null\n    },\n    \"isTemplate\": false,\n    \"cardRole\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "delete board",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"let jsonData = pm.response.json();\r",
+							"\r",
+							"pm.test(\"check delete output value\", function(){\r",
+							"    pm.expect(jsonData[\"_value\"]).to.eql(null);\r",
+							"});\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/1/boards/{{boardId}}?key={{trello_key}}&token={{trello_token}}",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"1",
+						"boards",
+						"{{boardId}}"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{trello_key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{trello_token}}"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete board result",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/boards/{{board_id}}?key={{trello_key}}&token={{trello_token}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"boards",
+								"{{board_id}}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{trello_key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{trello_token}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Dns-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Surrogate-Control",
+							"value": "no-store"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, must-revalidate, no-cache, no-store"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 01 Jan 1970 00:00:00"
+						},
+						{
+							"key": "X-Trello-Version",
+							"value": "1.139754.0"
+						},
+						{
+							"key": "X-Trello-Environment",
+							"value": "Production"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Authorization, Accept, Content-Type"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Token-Interval-Ms",
+							"value": "10000"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Token-Max",
+							"value": "100"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Token-Remaining",
+							"value": "99"
+						},
+						{
+							"key": "X-Rate-Limit-Db-Query-Time-Interval-Ms",
+							"value": "600000"
+						},
+						{
+							"key": "X-Rate-Limit-Db-Query-Time-Max",
+							"value": "7200000"
+						},
+						{
+							"key": "X-Rate-Limit-Db-Query-Time-Remaining",
+							"value": "7199990"
+						},
+						{
+							"key": "X-Rate-Limit-Action-Interval-Ms",
+							"value": "3600000"
+						},
+						{
+							"key": "X-Rate-Limit-Action-Max",
+							"value": "15000"
+						},
+						{
+							"key": "X-Rate-Limit-Action-Remaining",
+							"value": "14999"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Key-Interval-Ms",
+							"value": "10000"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Key-Max",
+							"value": "300"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Key-Remaining",
+							"value": "299"
+						},
+						{
+							"key": "X-Rate-Limit-Member-Interval-Ms",
+							"value": "10000"
+						},
+						{
+							"key": "X-Rate-Limit-Member-Max",
+							"value": "375"
+						},
+						{
+							"key": "X-Rate-Limit-Member-Remaining",
+							"value": "374"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly"
+						},
+						{
+							"key": "X-Server-Time",
+							"value": "1656193386340"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 25 Jun 2022 21:43:06 GMT"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "X-Envoy-Upstream-Service-Time",
+							"value": "396"
+						},
+						{
+							"key": "Expect-Ct",
+							"value": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; preload"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Atl-Traceid",
+							"value": "c8edb446706a45df"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}"
+						},
+						{
+							"key": "Server",
+							"value": "globaledge-envoy"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_value\": null\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "trello_token",
+			"value": "eb4eeeff83027ad00d7f64d5de962700773433acfd02e71a3bf192f426f03194"
+		},
+		{
+			"key": "trello_key",
+			"value": "1d2cd3573c40e65bdd7795b2506aaace"
+		},
+		{
+			"key": "baseURL",
+			"value": "https://api.trello.com"
+		}
+	]
+}
