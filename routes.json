@@ -1,0 +1,27 @@
+[
+    {
+        "routes" : [
+            "Create board",
+            "Create Todo",
+            "Create Done",
+            "delete board"
+        ]
+    },
+    {
+        "routes" : [
+            "Create board",
+            "Create Done",
+            "Create Todo",
+            "delete board" 
+        ]
+    },
+    {
+        "routes" : [
+            "Create board",
+            "delete board",
+            "Create Todo",
+            "Create Done",
+            "delete board"
+        ]
+    }
+]

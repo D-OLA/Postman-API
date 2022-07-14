@@ -1,0 +1,2648 @@
+04:41:29.887 POST https://api.trello.com/1/boards?name=Trello%20Board&key=1d2cd3573c40e65bdd7795b2506aaace&token=eb4eeeff83027ad00d7f64d5de962700773433acfd02e71a3bf192f426f03194: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 8649
+      },
+      "remote": {
+        "address": "185.166.143.25",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.3",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": "AU",
+          "stateOrProvince": "New South Wales",
+          "locality": "Sydney",
+          "organization": "Atlassian Pty Ltd",
+          "commonName": "*.trello.com",
+          "alternativeNames": "DNS:*.trello.com, DNS:trello.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "DigiCert Inc",
+          "commonName": "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+        },
+        "validFrom": "Jan 24 00:00:00 2022 GMT",
+        "validTo": "Feb 24 23:59:59 2023 GMT",
+        "fingerprint": "CE:F0:82:34:F4:E7:24:CF:5F:70:56:B0:02:0F:84:60:5C:03:C4:9C",
+        "serialNumber": "0a31c7586a4506f657d7c6fd65b6f60f"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "58d2cb77-b4c7-4563-9e9b-1cc06d93fdf5",
+    "host": "api.trello.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "cookie": "ajs_anonymous_id=%22d2dab629-5928-3ab4-0de2-419b436a69c7%22; atlCohort={\"bucketAll\":{\"bucketedAtUTC\":\"2022-06-23T16:51:46.890Z\",\"version\":\"2\",\"index\":95,\"bucketId\":0}}; dsc=cb82fde99308da2cbd7f3e79c3b8bb3ce78ef471715eafa44a0efc7513b05e7e",
+    "content-length": "0"
+  },
+  "Response Headers": {
+    "x-dns-prefetch-control": "off",
+    "x-frame-options": "DENY",
+    "x-download-options": "noopen",
+    "x-permitted-cross-domain-policies": "none",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "surrogate-control": "no-store",
+    "cache-control": "max-age=0, must-revalidate, no-cache, no-store",
+    "pragma": "no-cache",
+    "expires": "Thu, 01 Jan 1970 00:00:00",
+    "x-trello-version": "1.142239.0",
+    "x-trello-environment": "Production",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET, PUT, POST, DELETE",
+    "access-control-allow-headers": "Authorization, Accept, Content-Type",
+    "access-control-expose-headers": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining",
+    "x-rate-limit-api-token-interval-ms": "10000",
+    "x-rate-limit-api-token-max": "100",
+    "x-rate-limit-api-token-remaining": "99",
+    "x-rate-limit-db-query-time-interval-ms": "600000",
+    "x-rate-limit-db-query-time-max": "7200000",
+    "x-rate-limit-db-query-time-remaining": "7199990",
+    "x-rate-limit-action-interval-ms": "3600000",
+    "x-rate-limit-action-max": "15000",
+    "x-rate-limit-action-remaining": "14999",
+    "x-rate-limit-api-key-interval-ms": "10000",
+    "x-rate-limit-api-key-max": "300",
+    "x-rate-limit-api-key-remaining": "299",
+    "x-rate-limit-member-interval-ms": "10000",
+    "x-rate-limit-member-max": "375",
+    "x-rate-limit-member-remaining": "374",
+    "set-cookie": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly",
+    "x-server-time": "1657597289506",
+    "x-trello-api-org-selected": "true",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Tue, 12 Jul 2022 03:41:29 GMT",
+    "content-encoding": "gzip",
+    "x-envoy-upstream-service-time": "282",
+    "expect-ct": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400",
+    "strict-transport-security": "max-age=63072000; preload",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "atl-traceid": "5174a0077b0bff51",
+    "report-to": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}",
+    "nel": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}",
+    "server": "globaledge-envoy",
+    "transfer-encoding": "chunked"
+  },
+  "Response Body": "{\"id\":\"62cced6928da0581dffa959a\",\"name\":\"Trello Board\",\"desc\":\"\",\"descData\":null,\"closed\":false,\"idOrganization\":\"62984234f7ce44066ee4ff3a\",\"idEnterprise\":null,\"pinned\":false,\"url\":\"https://trello.com/b/yxXlM428/trello-board\",\"shortUrl\":\"https://trello.com/b/yxXlM428\",\"prefs\":{\"permissionLevel\":\"private\",\"hideVotes\":false,\"voting\":\"disabled\",\"comments\":\"members\",\"invitations\":\"members\",\"selfJoin\":true,\"cardCovers\":true,\"isTemplate\":false,\"cardAging\":\"regular\",\"calendarFeedEnabled\":false,\"hiddenPluginBoardButtons\":[],\"switcherViews\":[{\"_id\":\"62cced6928da0581dffa959b\",\"viewType\":\"Board\",\"enabled\":true},{\"_id\":\"62cced6928da0581dffa959c\",\"viewType\":\"Table\",\"enabled\":true},{\"_id\":\"62cced6928da0581dffa959d\",\"viewType\":\"Calendar\",\"enabled\":false},{\"_id\":\"62cced6928da0581dffa959e\",\"viewType\":\"Dashboard\",\"enabled\":false},{\"_id\":\"62cced6928da0581dffa959f\",\"viewType\":\"Timeline\",\"enabled\":false},{\"_id\":\"62cced6928da0581dffa95a0\",\"viewType\":\"Map\",\"enabled\":false}],\"background\":\"blue\",\"backgroundColor\":\"#0079BF\",\"backgroundImage\":null,\"backgroundImageScaled\":null,\"backgroundTile\":false,\"backgroundBrightness\":\"dark\",\"backgroundBottomColor\":\"#0079BF\",\"backgroundTopColor\":\"#0079BF\",\"canBePublic\":true,\"canBeEnterprise\":true,\"canBeOrg\":true,\"canBePrivate\":true,\"canInvite\":true},\"labelNames\":{\"green\":\"\",\"yellow\":\"\",\"orange\":\"\",\"red\":\"\",\"purple\":\"\",\"blue\":\"\",\"sky\":\"\",\"lime\":\"\",\"pink\":\"\",\"black\":\"\",\"green_dark\":\"\",\"yellow_dark\":\"\",\"orange_dark\":\"\",\"red_dark\":\"\",\"purple_dark\":\"\",\"blue_dark\":\"\",\"sky_dark\":\"\",\"lime_dark\":\"\",\"pink_dark\":\"\",\"black_dark\":\"\",\"green_light\":\"\",\"yellow_light\":\"\",\"orange_light\":\"\",\"red_light\":\"\",\"purple_light\":\"\",\"blue_light\":\"\",\"sky_light\":\"\",\"lime_light\":\"\",\"pink_light\":\"\",\"black_light\":\"\"},\"limits\":{}}"
+}
+04:41:30.475 POST https://api.trello.com/1/boards?name=Trello%20Board&key=1d2cd3573c40e65bdd7795b2506aaace&token=eb4eeeff83027ad00d7f64d5de962700773433acfd02e71a3bf192f426f03194: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 8649
+      },
+      "remote": {
+        "address": "185.166.143.25",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.3",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": "AU",
+          "stateOrProvince": "New South Wales",
+          "locality": "Sydney",
+          "organization": "Atlassian Pty Ltd",
+          "commonName": "*.trello.com",
+          "alternativeNames": "DNS:*.trello.com, DNS:trello.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "DigiCert Inc",
+          "commonName": "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+        },
+        "validFrom": "Jan 24 00:00:00 2022 GMT",
+        "validTo": "Feb 24 23:59:59 2023 GMT",
+        "fingerprint": "CE:F0:82:34:F4:E7:24:CF:5F:70:56:B0:02:0F:84:60:5C:03:C4:9C",
+        "serialNumber": "0a31c7586a4506f657d7c6fd65b6f60f"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "0ac2fbdf-5924-40c0-a775-dcd54065ce91",
+    "host": "api.trello.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "cookie": "ajs_anonymous_id=%22d2dab629-5928-3ab4-0de2-419b436a69c7%22; atlCohort={\"bucketAll\":{\"bucketedAtUTC\":\"2022-06-23T16:51:46.890Z\",\"version\":\"2\",\"index\":95,\"bucketId\":0}}; dsc=cb82fde99308da2cbd7f3e79c3b8bb3ce78ef471715eafa44a0efc7513b05e7e; preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI",
+    "content-length": "0"
+  },
+  "Response Headers": {
+    "x-dns-prefetch-control": "off",
+    "x-frame-options": "DENY",
+    "x-download-options": "noopen",
+    "x-permitted-cross-domain-policies": "none",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "surrogate-control": "no-store",
+    "cache-control": "max-age=0, must-revalidate, no-cache, no-store",
+    "pragma": "no-cache",
+    "expires": "Thu, 01 Jan 1970 00:00:00",
+    "x-trello-version": "1.142239.0",
+    "x-trello-environment": "Production",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET, PUT, POST, DELETE",
+    "access-control-allow-headers": "Authorization, Accept, Content-Type",
+    "access-control-expose-headers": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining",
+    "x-rate-limit-api-token-interval-ms": "10000",
+    "x-rate-limit-api-token-max": "100",
+    "x-rate-limit-api-token-remaining": "99",
+    "x-rate-limit-db-query-time-interval-ms": "600000",
+    "x-rate-limit-db-query-time-max": "7200000",
+    "x-rate-limit-db-query-time-remaining": "7199990",
+    "x-rate-limit-action-interval-ms": "3600000",
+    "x-rate-limit-action-max": "15000",
+    "x-rate-limit-action-remaining": "14999",
+    "x-rate-limit-api-key-interval-ms": "10000",
+    "x-rate-limit-api-key-max": "300",
+    "x-rate-limit-api-key-remaining": "299",
+    "x-rate-limit-member-interval-ms": "10000",
+    "x-rate-limit-member-max": "375",
+    "x-rate-limit-member-remaining": "374",
+    "set-cookie": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly",
+    "x-server-time": "1657597290193",
+    "x-trello-api-org-selected": "true",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Tue, 12 Jul 2022 03:41:30 GMT",
+    "content-encoding": "gzip",
+    "x-envoy-upstream-service-time": "280",
+    "expect-ct": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400",
+    "strict-transport-security": "max-age=63072000; preload",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "atl-traceid": "1ce00aa9ef574ec8",
+    "report-to": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}",
+    "nel": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}",
+    "server": "globaledge-envoy",
+    "transfer-encoding": "chunked"
+  },
+  "Response Body": "{\"id\":\"62cced6a30f62e089670d3f8\",\"name\":\"Trello Board\",\"desc\":\"\",\"descData\":null,\"closed\":false,\"idOrganization\":\"62984234f7ce44066ee4ff3a\",\"idEnterprise\":null,\"pinned\":false,\"url\":\"https://trello.com/b/uUClVPn1/trello-board\",\"shortUrl\":\"https://trello.com/b/uUClVPn1\",\"prefs\":{\"permissionLevel\":\"private\",\"hideVotes\":false,\"voting\":\"disabled\",\"comments\":\"members\",\"invitations\":\"members\",\"selfJoin\":true,\"cardCovers\":true,\"isTemplate\":false,\"cardAging\":\"regular\",\"calendarFeedEnabled\":false,\"hiddenPluginBoardButtons\":[],\"switcherViews\":[{\"_id\":\"62cced6a30f62e089670d3f9\",\"viewType\":\"Board\",\"enabled\":true},{\"_id\":\"62cced6a30f62e089670d3fa\",\"viewType\":\"Table\",\"enabled\":true},{\"_id\":\"62cced6a30f62e089670d3fb\",\"viewType\":\"Calendar\",\"enabled\":false},{\"_id\":\"62cced6a30f62e089670d3fc\",\"viewType\":\"Dashboard\",\"enabled\":false},{\"_id\":\"62cced6a30f62e089670d3fd\",\"viewType\":\"Timeline\",\"enabled\":false},{\"_id\":\"62cced6a30f62e089670d3fe\",\"viewType\":\"Map\",\"enabled\":false}],\"background\":\"blue\",\"backgroundColor\":\"#0079BF\",\"backgroundImage\":null,\"backgroundImageScaled\":null,\"backgroundTile\":false,\"backgroundBrightness\":\"dark\",\"backgroundBottomColor\":\"#0079BF\",\"backgroundTopColor\":\"#0079BF\",\"canBePublic\":true,\"canBeEnterprise\":true,\"canBeOrg\":true,\"canBePrivate\":true,\"canInvite\":true},\"labelNames\":{\"green\":\"\",\"yellow\":\"\",\"orange\":\"\",\"red\":\"\",\"purple\":\"\",\"blue\":\"\",\"sky\":\"\",\"lime\":\"\",\"pink\":\"\",\"black\":\"\",\"green_dark\":\"\",\"yellow_dark\":\"\",\"orange_dark\":\"\",\"red_dark\":\"\",\"purple_dark\":\"\",\"blue_dark\":\"\",\"sky_dark\":\"\",\"lime_dark\":\"\",\"pink_dark\":\"\",\"black_dark\":\"\",\"green_light\":\"\",\"yellow_light\":\"\",\"orange_light\":\"\",\"red_light\":\"\",\"purple_light\":\"\",\"blue_light\":\"\",\"sky_light\":\"\",\"lime_light\":\"\",\"pink_light\":\"\",\"black_light\":\"\"},\"limits\":{}}"
+}
+04:41:30.877 POST https://api.trello.com/1/boards/62cced6a30f62e089670d3f8/lists?key=1d2cd3573c40e65bdd7795b2506aaace&token=eb4eeeff83027ad00d7f64d5de962700773433acfd02e71a3bf192f426f03194&name=TO-DO: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 8649
+      },
+      "remote": {
+        "address": "185.166.143.25",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.3",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": "AU",
+          "stateOrProvince": "New South Wales",
+          "locality": "Sydney",
+          "organization": "Atlassian Pty Ltd",
+          "commonName": "*.trello.com",
+          "alternativeNames": "DNS:*.trello.com, DNS:trello.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "DigiCert Inc",
+          "commonName": "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+        },
+        "validFrom": "Jan 24 00:00:00 2022 GMT",
+        "validTo": "Feb 24 23:59:59 2023 GMT",
+        "fingerprint": "CE:F0:82:34:F4:E7:24:CF:5F:70:56:B0:02:0F:84:60:5C:03:C4:9C",
+        "serialNumber": "0a31c7586a4506f657d7c6fd65b6f60f"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "faeda379-168a-47c7-b37b-828e6dcf5867",
+    "host": "api.trello.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "cookie": "ajs_anonymous_id=%22d2dab629-5928-3ab4-0de2-419b436a69c7%22; atlCohort={\"bucketAll\":{\"bucketedAtUTC\":\"2022-06-23T16:51:46.890Z\",\"version\":\"2\",\"index\":95,\"bucketId\":0}}; dsc=cb82fde99308da2cbd7f3e79c3b8bb3ce78ef471715eafa44a0efc7513b05e7e; preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI",
+    "content-length": "0"
+  },
+  "Response Headers": {
+    "x-dns-prefetch-control": "off",
+    "x-frame-options": "DENY",
+    "x-download-options": "noopen",
+    "x-permitted-cross-domain-policies": "none",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "surrogate-control": "no-store",
+    "cache-control": "max-age=0, must-revalidate, no-cache, no-store",
+    "pragma": "no-cache",
+    "expires": "Thu, 01 Jan 1970 00:00:00",
+    "x-trello-version": "1.142239.0",
+    "x-trello-environment": "Production",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET, PUT, POST, DELETE",
+    "access-control-allow-headers": "Authorization, Accept, Content-Type",
+    "access-control-expose-headers": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining",
+    "x-rate-limit-api-token-interval-ms": "10000",
+    "x-rate-limit-api-token-max": "100",
+    "x-rate-limit-api-token-remaining": "98",
+    "x-rate-limit-db-query-time-interval-ms": "600000",
+    "x-rate-limit-db-query-time-max": "7200000",
+    "x-rate-limit-db-query-time-remaining": "7199990",
+    "x-rate-limit-action-interval-ms": "3600000",
+    "x-rate-limit-action-max": "15000",
+    "x-rate-limit-action-remaining": "14999",
+    "x-rate-limit-api-key-interval-ms": "10000",
+    "x-rate-limit-api-key-max": "300",
+    "x-rate-limit-api-key-remaining": "298",
+    "x-rate-limit-member-interval-ms": "10000",
+    "x-rate-limit-member-max": "375",
+    "x-rate-limit-member-remaining": "373",
+    "set-cookie": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly",
+    "x-server-time": "1657597290648",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Tue, 12 Jul 2022 03:41:30 GMT",
+    "content-encoding": "gzip",
+    "x-envoy-upstream-service-time": "162",
+    "expect-ct": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400",
+    "strict-transport-security": "max-age=63072000; preload",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "atl-traceid": "9edcb719086601c1",
+    "report-to": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}",
+    "nel": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}",
+    "server": "globaledge-envoy",
+    "transfer-encoding": "chunked"
+  },
+  "Response Body": "{\"id\":\"62cced6a56e5687597f9b5a3\",\"name\":\"TO-DO\",\"closed\":false,\"idBoard\":\"62cced6a30f62e089670d3f8\",\"pos\":8192,\"limits\":{}}"
+}
+04:41:30.915 { id: '62cced6a56e5687597f9b5a3',
+  name: 'TO-DO',
+  closed: false,
+  idBoard: '62cced6a30f62e089670d3f8',
+  pos: 8192,
+  limits: {} }
+04:41:31.391 POST https://api.trello.com/1/boards/62cced6a30f62e089670d3f8/lists?key=1d2cd3573c40e65bdd7795b2506aaace&token=eb4eeeff83027ad00d7f64d5de962700773433acfd02e71a3bf192f426f03194&name=DO-NE: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 8649
+      },
+      "remote": {
+        "address": "185.166.143.25",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.3",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": "AU",
+          "stateOrProvince": "New South Wales",
+          "locality": "Sydney",
+          "organization": "Atlassian Pty Ltd",
+          "commonName": "*.trello.com",
+          "alternativeNames": "DNS:*.trello.com, DNS:trello.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "DigiCert Inc",
+          "commonName": "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+        },
+        "validFrom": "Jan 24 00:00:00 2022 GMT",
+        "validTo": "Feb 24 23:59:59 2023 GMT",
+        "fingerprint": "CE:F0:82:34:F4:E7:24:CF:5F:70:56:B0:02:0F:84:60:5C:03:C4:9C",
+        "serialNumber": "0a31c7586a4506f657d7c6fd65b6f60f"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "a917d72f-4126-47fb-a411-4319a4d502d8",
+    "host": "api.trello.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "cookie": "ajs_anonymous_id=%22d2dab629-5928-3ab4-0de2-419b436a69c7%22; atlCohort={\"bucketAll\":{\"bucketedAtUTC\":\"2022-06-23T16:51:46.890Z\",\"version\":\"2\",\"index\":95,\"bucketId\":0}}; dsc=cb82fde99308da2cbd7f3e79c3b8bb3ce78ef471715eafa44a0efc7513b05e7e; preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI",
+    "content-length": "0"
+  },
+  "Response Headers": {
+    "x-dns-prefetch-control": "off",
+    "x-frame-options": "DENY",
+    "x-download-options": "noopen",
+    "x-permitted-cross-domain-policies": "none",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "surrogate-control": "no-store",
+    "cache-control": "max-age=0, must-revalidate, no-cache, no-store",
+    "pragma": "no-cache",
+    "expires": "Thu, 01 Jan 1970 00:00:00",
+    "x-trello-version": "1.142239.0",
+    "x-trello-environment": "Production",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET, PUT, POST, DELETE",
+    "access-control-allow-headers": "Authorization, Accept, Content-Type",
+    "access-control-expose-headers": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining",
+    "x-rate-limit-api-token-interval-ms": "10000",
+    "x-rate-limit-api-token-max": "100",
+    "x-rate-limit-api-token-remaining": "97",
+    "x-rate-limit-db-query-time-interval-ms": "600000",
+    "x-rate-limit-db-query-time-max": "7200000",
+    "x-rate-limit-db-query-time-remaining": "7199990",
+    "x-rate-limit-action-interval-ms": "3600000",
+    "x-rate-limit-action-max": "15000",
+    "x-rate-limit-action-remaining": "14999",
+    "x-rate-limit-api-key-interval-ms": "10000",
+    "x-rate-limit-api-key-max": "300",
+    "x-rate-limit-api-key-remaining": "297",
+    "x-rate-limit-member-interval-ms": "10000",
+    "x-rate-limit-member-max": "375",
+    "x-rate-limit-member-remaining": "372",
+    "set-cookie": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly",
+    "x-server-time": "1657597291062",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Tue, 12 Jul 2022 03:41:31 GMT",
+    "content-encoding": "gzip",
+    "x-envoy-upstream-service-time": "178",
+    "expect-ct": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400",
+    "strict-transport-security": "max-age=63072000; preload",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "atl-traceid": "f9c9083c9b6a4bbf",
+    "report-to": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}",
+    "nel": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}",
+    "server": "globaledge-envoy",
+    "transfer-encoding": "chunked"
+  },
+  "Response Body": "{\"id\":\"62cced6bc4a936793e2e33a8\",\"name\":\"DO-NE\",\"closed\":false,\"idBoard\":\"62cced6a30f62e089670d3f8\",\"pos\":4096,\"limits\":{}}"
+}
+04:41:32.225 DELETE https://api.trello.com/1/boards/62cced6a30f62e089670d3f8?key=1d2cd3573c40e65bdd7795b2506aaace&token=eb4eeeff83027ad00d7f64d5de962700773433acfd02e71a3bf192f426f03194: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 8649
+      },
+      "remote": {
+        "address": "185.166.143.25",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.3",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": "AU",
+          "stateOrProvince": "New South Wales",
+          "locality": "Sydney",
+          "organization": "Atlassian Pty Ltd",
+          "commonName": "*.trello.com",
+          "alternativeNames": "DNS:*.trello.com, DNS:trello.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "DigiCert Inc",
+          "commonName": "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+        },
+        "validFrom": "Jan 24 00:00:00 2022 GMT",
+        "validTo": "Feb 24 23:59:59 2023 GMT",
+        "fingerprint": "CE:F0:82:34:F4:E7:24:CF:5F:70:56:B0:02:0F:84:60:5C:03:C4:9C",
+        "serialNumber": "0a31c7586a4506f657d7c6fd65b6f60f"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "991f7297-8df4-4608-87ba-bc68944c2b10",
+    "host": "api.trello.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "cookie": "ajs_anonymous_id=%22d2dab629-5928-3ab4-0de2-419b436a69c7%22; atlCohort={\"bucketAll\":{\"bucketedAtUTC\":\"2022-06-23T16:51:46.890Z\",\"version\":\"2\",\"index\":95,\"bucketId\":0}}; dsc=cb82fde99308da2cbd7f3e79c3b8bb3ce78ef471715eafa44a0efc7513b05e7e; preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI"
+  },
+  "Response Headers": {
+    "x-dns-prefetch-control": "off",
+    "x-frame-options": "DENY",
+    "x-download-options": "noopen",
+    "x-permitted-cross-domain-policies": "none",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "surrogate-control": "no-store",
+    "cache-control": "max-age=0, must-revalidate, no-cache, no-store",
+    "pragma": "no-cache",
+    "expires": "Thu, 01 Jan 1970 00:00:00",
+    "x-trello-version": "1.142239.0",
+    "x-trello-environment": "Production",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET, PUT, POST, DELETE",
+    "access-control-allow-headers": "Authorization, Accept, Content-Type",
+    "access-control-expose-headers": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining",
+    "x-rate-limit-api-token-interval-ms": "10000",
+    "x-rate-limit-api-token-max": "100",
+    "x-rate-limit-api-token-remaining": "96",
+    "x-rate-limit-db-query-time-interval-ms": "600000",
+    "x-rate-limit-db-query-time-max": "7200000",
+    "x-rate-limit-db-query-time-remaining": "7199990",
+    "x-rate-limit-action-interval-ms": "3600000",
+    "x-rate-limit-action-max": "15000",
+    "x-rate-limit-action-remaining": "14999",
+    "x-rate-limit-api-key-interval-ms": "10000",
+    "x-rate-limit-api-key-max": "300",
+    "x-rate-limit-api-key-remaining": "296",
+    "x-rate-limit-member-interval-ms": "10000",
+    "x-rate-limit-member-max": "375",
+    "x-rate-limit-member-remaining": "371",
+    "set-cookie": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly",
+    "x-server-time": "1657597291813",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Tue, 12 Jul 2022 03:41:31 GMT",
+    "content-encoding": "gzip",
+    "x-envoy-upstream-service-time": "391",
+    "expect-ct": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400",
+    "strict-transport-security": "max-age=63072000; preload",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "atl-traceid": "c80ce18a19a3f95b",
+    "report-to": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}",
+    "nel": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}",
+    "server": "globaledge-envoy",
+    "transfer-encoding": "chunked"
+  },
+  "Response Body": "{\"_value\":null}\n"
+}
+04:41:32.836 POST https://api.trello.com/1/boards?name=Trello%20Board&key=1d2cd3573c40e65bdd7795b2506aaace&token=eb4eeeff83027ad00d7f64d5de962700773433acfd02e71a3bf192f426f03194: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 8649
+      },
+      "remote": {
+        "address": "185.166.143.25",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.3",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": "AU",
+          "stateOrProvince": "New South Wales",
+          "locality": "Sydney",
+          "organization": "Atlassian Pty Ltd",
+          "commonName": "*.trello.com",
+          "alternativeNames": "DNS:*.trello.com, DNS:trello.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "DigiCert Inc",
+          "commonName": "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+        },
+        "validFrom": "Jan 24 00:00:00 2022 GMT",
+        "validTo": "Feb 24 23:59:59 2023 GMT",
+        "fingerprint": "CE:F0:82:34:F4:E7:24:CF:5F:70:56:B0:02:0F:84:60:5C:03:C4:9C",
+        "serialNumber": "0a31c7586a4506f657d7c6fd65b6f60f"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "0f8a461f-add0-455e-b25e-298c50ccc960",
+    "host": "api.trello.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "cookie": "ajs_anonymous_id=%22d2dab629-5928-3ab4-0de2-419b436a69c7%22; atlCohort={\"bucketAll\":{\"bucketedAtUTC\":\"2022-06-23T16:51:46.890Z\",\"version\":\"2\",\"index\":95,\"bucketId\":0}}; dsc=cb82fde99308da2cbd7f3e79c3b8bb3ce78ef471715eafa44a0efc7513b05e7e; preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI",
+    "content-length": "0"
+  },
+  "Response Headers": {
+    "x-dns-prefetch-control": "off",
+    "x-frame-options": "DENY",
+    "x-download-options": "noopen",
+    "x-permitted-cross-domain-policies": "none",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "surrogate-control": "no-store",
+    "cache-control": "max-age=0, must-revalidate, no-cache, no-store",
+    "pragma": "no-cache",
+    "expires": "Thu, 01 Jan 1970 00:00:00",
+    "x-trello-version": "1.142239.0",
+    "x-trello-environment": "Production",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET, PUT, POST, DELETE",
+    "access-control-allow-headers": "Authorization, Accept, Content-Type",
+    "access-control-expose-headers": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining",
+    "x-rate-limit-api-token-interval-ms": "10000",
+    "x-rate-limit-api-token-max": "100",
+    "x-rate-limit-api-token-remaining": "95",
+    "x-rate-limit-db-query-time-interval-ms": "600000",
+    "x-rate-limit-db-query-time-max": "7200000",
+    "x-rate-limit-db-query-time-remaining": "7199990",
+    "x-rate-limit-action-interval-ms": "3600000",
+    "x-rate-limit-action-max": "15000",
+    "x-rate-limit-action-remaining": "14999",
+    "x-rate-limit-api-key-interval-ms": "10000",
+    "x-rate-limit-api-key-max": "300",
+    "x-rate-limit-api-key-remaining": "295",
+    "x-rate-limit-member-interval-ms": "10000",
+    "x-rate-limit-member-max": "375",
+    "x-rate-limit-member-remaining": "370",
+    "set-cookie": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly",
+    "x-server-time": "1657597292506",
+    "x-trello-api-org-selected": "true",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Tue, 12 Jul 2022 03:41:32 GMT",
+    "content-encoding": "gzip",
+    "x-envoy-upstream-service-time": "255",
+    "expect-ct": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400",
+    "strict-transport-security": "max-age=63072000; preload",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "atl-traceid": "75c0894ef04669d8",
+    "report-to": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}",
+    "nel": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}",
+    "server": "globaledge-envoy",
+    "transfer-encoding": "chunked"
+  },
+  "Response Body": "{\"id\":\"62cced6c4295df6421a0f3b3\",\"name\":\"Trello Board\",\"desc\":\"\",\"descData\":null,\"closed\":false,\"idOrganization\":\"62984234f7ce44066ee4ff3a\",\"idEnterprise\":null,\"pinned\":false,\"url\":\"https://trello.com/b/RdmGVziK/trello-board\",\"shortUrl\":\"https://trello.com/b/RdmGVziK\",\"prefs\":{\"permissionLevel\":\"private\",\"hideVotes\":false,\"voting\":\"disabled\",\"comments\":\"members\",\"invitations\":\"members\",\"selfJoin\":true,\"cardCovers\":true,\"isTemplate\":false,\"cardAging\":\"regular\",\"calendarFeedEnabled\":false,\"hiddenPluginBoardButtons\":[],\"switcherViews\":[{\"_id\":\"62cced6c4295df6421a0f3b4\",\"viewType\":\"Board\",\"enabled\":true},{\"_id\":\"62cced6c4295df6421a0f3b5\",\"viewType\":\"Table\",\"enabled\":true},{\"_id\":\"62cced6c4295df6421a0f3b6\",\"viewType\":\"Calendar\",\"enabled\":false},{\"_id\":\"62cced6c4295df6421a0f3b7\",\"viewType\":\"Dashboard\",\"enabled\":false},{\"_id\":\"62cced6c4295df6421a0f3b8\",\"viewType\":\"Timeline\",\"enabled\":false},{\"_id\":\"62cced6c4295df6421a0f3b9\",\"viewType\":\"Map\",\"enabled\":false}],\"background\":\"blue\",\"backgroundColor\":\"#0079BF\",\"backgroundImage\":null,\"backgroundImageScaled\":null,\"backgroundTile\":false,\"backgroundBrightness\":\"dark\",\"backgroundBottomColor\":\"#0079BF\",\"backgroundTopColor\":\"#0079BF\",\"canBePublic\":true,\"canBeEnterprise\":true,\"canBeOrg\":true,\"canBePrivate\":true,\"canInvite\":true},\"labelNames\":{\"green\":\"\",\"yellow\":\"\",\"orange\":\"\",\"red\":\"\",\"purple\":\"\",\"blue\":\"\",\"sky\":\"\",\"lime\":\"\",\"pink\":\"\",\"black\":\"\",\"green_dark\":\"\",\"yellow_dark\":\"\",\"orange_dark\":\"\",\"red_dark\":\"\",\"purple_dark\":\"\",\"blue_dark\":\"\",\"sky_dark\":\"\",\"lime_dark\":\"\",\"pink_dark\":\"\",\"black_dark\":\"\",\"green_light\":\"\",\"yellow_light\":\"\",\"orange_light\":\"\",\"red_light\":\"\",\"purple_light\":\"\",\"blue_light\":\"\",\"sky_light\":\"\",\"lime_light\":\"\",\"pink_light\":\"\",\"black_light\":\"\"},\"limits\":{}}"
+}
+04:41:33.438 POST https://api.trello.com/1/boards?name=Trello%20Board&key=1d2cd3573c40e65bdd7795b2506aaace&token=eb4eeeff83027ad00d7f64d5de962700773433acfd02e71a3bf192f426f03194: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 8649
+      },
+      "remote": {
+        "address": "185.166.143.25",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.3",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": "AU",
+          "stateOrProvince": "New South Wales",
+          "locality": "Sydney",
+          "organization": "Atlassian Pty Ltd",
+          "commonName": "*.trello.com",
+          "alternativeNames": "DNS:*.trello.com, DNS:trello.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "DigiCert Inc",
+          "commonName": "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+        },
+        "validFrom": "Jan 24 00:00:00 2022 GMT",
+        "validTo": "Feb 24 23:59:59 2023 GMT",
+        "fingerprint": "CE:F0:82:34:F4:E7:24:CF:5F:70:56:B0:02:0F:84:60:5C:03:C4:9C",
+        "serialNumber": "0a31c7586a4506f657d7c6fd65b6f60f"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "8424bb05-cd16-450c-bf63-aef19a956ee7",
+    "host": "api.trello.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "cookie": "ajs_anonymous_id=%22d2dab629-5928-3ab4-0de2-419b436a69c7%22; atlCohort={\"bucketAll\":{\"bucketedAtUTC\":\"2022-06-23T16:51:46.890Z\",\"version\":\"2\",\"index\":95,\"bucketId\":0}}; dsc=cb82fde99308da2cbd7f3e79c3b8bb3ce78ef471715eafa44a0efc7513b05e7e; preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI",
+    "content-length": "0"
+  },
+  "Response Headers": {
+    "x-dns-prefetch-control": "off",
+    "x-frame-options": "DENY",
+    "x-download-options": "noopen",
+    "x-permitted-cross-domain-policies": "none",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "surrogate-control": "no-store",
+    "cache-control": "max-age=0, must-revalidate, no-cache, no-store",
+    "pragma": "no-cache",
+    "expires": "Thu, 01 Jan 1970 00:00:00",
+    "x-trello-version": "1.142239.0",
+    "x-trello-environment": "Production",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET, PUT, POST, DELETE",
+    "access-control-allow-headers": "Authorization, Accept, Content-Type",
+    "access-control-expose-headers": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining",
+    "x-rate-limit-api-token-interval-ms": "10000",
+    "x-rate-limit-api-token-max": "100",
+    "x-rate-limit-api-token-remaining": "94",
+    "x-rate-limit-db-query-time-interval-ms": "600000",
+    "x-rate-limit-db-query-time-max": "7200000",
+    "x-rate-limit-db-query-time-remaining": "7199990",
+    "x-rate-limit-action-interval-ms": "3600000",
+    "x-rate-limit-action-max": "15000",
+    "x-rate-limit-action-remaining": "14999",
+    "x-rate-limit-api-key-interval-ms": "10000",
+    "x-rate-limit-api-key-max": "300",
+    "x-rate-limit-api-key-remaining": "294",
+    "x-rate-limit-member-interval-ms": "10000",
+    "x-rate-limit-member-max": "375",
+    "x-rate-limit-member-remaining": "369",
+    "set-cookie": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly",
+    "x-server-time": "1657597293125",
+    "x-trello-api-org-selected": "true",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Tue, 12 Jul 2022 03:41:33 GMT",
+    "content-encoding": "gzip",
+    "x-envoy-upstream-service-time": "271",
+    "expect-ct": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400",
+    "strict-transport-security": "max-age=63072000; preload",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "atl-traceid": "45107f25c73a75be",
+    "report-to": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}",
+    "nel": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}",
+    "server": "globaledge-envoy",
+    "transfer-encoding": "chunked"
+  },
+  "Response Body": "{\"id\":\"62cced6ca392424cfbd28d5c\",\"name\":\"Trello Board\",\"desc\":\"\",\"descData\":null,\"closed\":false,\"idOrganization\":\"62984234f7ce44066ee4ff3a\",\"idEnterprise\":null,\"pinned\":false,\"url\":\"https://trello.com/b/5uWQ3M2R/trello-board\",\"shortUrl\":\"https://trello.com/b/5uWQ3M2R\",\"prefs\":{\"permissionLevel\":\"private\",\"hideVotes\":false,\"voting\":\"disabled\",\"comments\":\"members\",\"invitations\":\"members\",\"selfJoin\":true,\"cardCovers\":true,\"isTemplate\":false,\"cardAging\":\"regular\",\"calendarFeedEnabled\":false,\"hiddenPluginBoardButtons\":[],\"switcherViews\":[{\"_id\":\"62cced6ca392424cfbd28d5d\",\"viewType\":\"Board\",\"enabled\":true},{\"_id\":\"62cced6ca392424cfbd28d5e\",\"viewType\":\"Table\",\"enabled\":true},{\"_id\":\"62cced6ca392424cfbd28d5f\",\"viewType\":\"Calendar\",\"enabled\":false},{\"_id\":\"62cced6ca392424cfbd28d60\",\"viewType\":\"Dashboard\",\"enabled\":false},{\"_id\":\"62cced6ca392424cfbd28d61\",\"viewType\":\"Timeline\",\"enabled\":false},{\"_id\":\"62cced6ca392424cfbd28d62\",\"viewType\":\"Map\",\"enabled\":false}],\"background\":\"blue\",\"backgroundColor\":\"#0079BF\",\"backgroundImage\":null,\"backgroundImageScaled\":null,\"backgroundTile\":false,\"backgroundBrightness\":\"dark\",\"backgroundBottomColor\":\"#0079BF\",\"backgroundTopColor\":\"#0079BF\",\"canBePublic\":true,\"canBeEnterprise\":true,\"canBeOrg\":true,\"canBePrivate\":true,\"canInvite\":true},\"labelNames\":{\"green\":\"\",\"yellow\":\"\",\"orange\":\"\",\"red\":\"\",\"purple\":\"\",\"blue\":\"\",\"sky\":\"\",\"lime\":\"\",\"pink\":\"\",\"black\":\"\",\"green_dark\":\"\",\"yellow_dark\":\"\",\"orange_dark\":\"\",\"red_dark\":\"\",\"purple_dark\":\"\",\"blue_dark\":\"\",\"sky_dark\":\"\",\"lime_dark\":\"\",\"pink_dark\":\"\",\"black_dark\":\"\",\"green_light\":\"\",\"yellow_light\":\"\",\"orange_light\":\"\",\"red_light\":\"\",\"purple_light\":\"\",\"blue_light\":\"\",\"sky_light\":\"\",\"lime_light\":\"\",\"pink_light\":\"\",\"black_light\":\"\"},\"limits\":{}}"
+}
+04:41:33.859 POST https://api.trello.com/1/boards/62cced6ca392424cfbd28d5c/lists?key=1d2cd3573c40e65bdd7795b2506aaace&token=eb4eeeff83027ad00d7f64d5de962700773433acfd02e71a3bf192f426f03194&name=DO-NE: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 8649
+      },
+      "remote": {
+        "address": "185.166.143.25",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.3",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": "AU",
+          "stateOrProvince": "New South Wales",
+          "locality": "Sydney",
+          "organization": "Atlassian Pty Ltd",
+          "commonName": "*.trello.com",
+          "alternativeNames": "DNS:*.trello.com, DNS:trello.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "DigiCert Inc",
+          "commonName": "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+        },
+        "validFrom": "Jan 24 00:00:00 2022 GMT",
+        "validTo": "Feb 24 23:59:59 2023 GMT",
+        "fingerprint": "CE:F0:82:34:F4:E7:24:CF:5F:70:56:B0:02:0F:84:60:5C:03:C4:9C",
+        "serialNumber": "0a31c7586a4506f657d7c6fd65b6f60f"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "50547a1b-002a-4ce4-996f-11e2b72822fb",
+    "host": "api.trello.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "cookie": "ajs_anonymous_id=%22d2dab629-5928-3ab4-0de2-419b436a69c7%22; atlCohort={\"bucketAll\":{\"bucketedAtUTC\":\"2022-06-23T16:51:46.890Z\",\"version\":\"2\",\"index\":95,\"bucketId\":0}}; dsc=cb82fde99308da2cbd7f3e79c3b8bb3ce78ef471715eafa44a0efc7513b05e7e; preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI",
+    "content-length": "0"
+  },
+  "Response Headers": {
+    "x-dns-prefetch-control": "off",
+    "x-frame-options": "DENY",
+    "x-download-options": "noopen",
+    "x-permitted-cross-domain-policies": "none",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "surrogate-control": "no-store",
+    "cache-control": "max-age=0, must-revalidate, no-cache, no-store",
+    "pragma": "no-cache",
+    "expires": "Thu, 01 Jan 1970 00:00:00",
+    "x-trello-version": "1.142239.0",
+    "x-trello-environment": "Production",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET, PUT, POST, DELETE",
+    "access-control-allow-headers": "Authorization, Accept, Content-Type",
+    "access-control-expose-headers": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining",
+    "x-rate-limit-api-token-interval-ms": "10000",
+    "x-rate-limit-api-token-max": "100",
+    "x-rate-limit-api-token-remaining": "93",
+    "x-rate-limit-db-query-time-interval-ms": "600000",
+    "x-rate-limit-db-query-time-max": "7200000",
+    "x-rate-limit-db-query-time-remaining": "7199990",
+    "x-rate-limit-action-interval-ms": "3600000",
+    "x-rate-limit-action-max": "15000",
+    "x-rate-limit-action-remaining": "14999",
+    "x-rate-limit-api-key-interval-ms": "10000",
+    "x-rate-limit-api-key-max": "300",
+    "x-rate-limit-api-key-remaining": "293",
+    "x-rate-limit-member-interval-ms": "10000",
+    "x-rate-limit-member-max": "375",
+    "x-rate-limit-member-remaining": "368",
+    "set-cookie": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly",
+    "x-server-time": "1657597293606",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Tue, 12 Jul 2022 03:41:33 GMT",
+    "content-encoding": "gzip",
+    "x-envoy-upstream-service-time": "162",
+    "expect-ct": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400",
+    "strict-transport-security": "max-age=63072000; preload",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "atl-traceid": "0f4c8325f2abbe44",
+    "report-to": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}",
+    "nel": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}",
+    "server": "globaledge-envoy",
+    "transfer-encoding": "chunked"
+  },
+  "Response Body": "{\"id\":\"62cced6d089bb174d979ce56\",\"name\":\"DO-NE\",\"closed\":false,\"idBoard\":\"62cced6ca392424cfbd28d5c\",\"pos\":8192,\"limits\":{}}"
+}
+04:41:34.365 POST https://api.trello.com/1/boards/62cced6ca392424cfbd28d5c/lists?key=1d2cd3573c40e65bdd7795b2506aaace&token=eb4eeeff83027ad00d7f64d5de962700773433acfd02e71a3bf192f426f03194&name=TO-DO: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 8649
+      },
+      "remote": {
+        "address": "185.166.143.25",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.3",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": "AU",
+          "stateOrProvince": "New South Wales",
+          "locality": "Sydney",
+          "organization": "Atlassian Pty Ltd",
+          "commonName": "*.trello.com",
+          "alternativeNames": "DNS:*.trello.com, DNS:trello.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "DigiCert Inc",
+          "commonName": "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+        },
+        "validFrom": "Jan 24 00:00:00 2022 GMT",
+        "validTo": "Feb 24 23:59:59 2023 GMT",
+        "fingerprint": "CE:F0:82:34:F4:E7:24:CF:5F:70:56:B0:02:0F:84:60:5C:03:C4:9C",
+        "serialNumber": "0a31c7586a4506f657d7c6fd65b6f60f"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "8c2f0978-e95c-4fc4-83eb-21775d03005c",
+    "host": "api.trello.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "cookie": "ajs_anonymous_id=%22d2dab629-5928-3ab4-0de2-419b436a69c7%22; atlCohort={\"bucketAll\":{\"bucketedAtUTC\":\"2022-06-23T16:51:46.890Z\",\"version\":\"2\",\"index\":95,\"bucketId\":0}}; dsc=cb82fde99308da2cbd7f3e79c3b8bb3ce78ef471715eafa44a0efc7513b05e7e; preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI",
+    "content-length": "0"
+  },
+  "Response Headers": {
+    "x-dns-prefetch-control": "off",
+    "x-frame-options": "DENY",
+    "x-download-options": "noopen",
+    "x-permitted-cross-domain-policies": "none",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "surrogate-control": "no-store",
+    "cache-control": "max-age=0, must-revalidate, no-cache, no-store",
+    "pragma": "no-cache",
+    "expires": "Thu, 01 Jan 1970 00:00:00",
+    "x-trello-version": "1.142239.0",
+    "x-trello-environment": "Production",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET, PUT, POST, DELETE",
+    "access-control-allow-headers": "Authorization, Accept, Content-Type",
+    "access-control-expose-headers": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining",
+    "x-rate-limit-api-token-interval-ms": "10000",
+    "x-rate-limit-api-token-max": "100",
+    "x-rate-limit-api-token-remaining": "92",
+    "x-rate-limit-db-query-time-interval-ms": "600000",
+    "x-rate-limit-db-query-time-max": "7200000",
+    "x-rate-limit-db-query-time-remaining": "7199990",
+    "x-rate-limit-action-interval-ms": "3600000",
+    "x-rate-limit-action-max": "15000",
+    "x-rate-limit-action-remaining": "14999",
+    "x-rate-limit-api-key-interval-ms": "10000",
+    "x-rate-limit-api-key-max": "300",
+    "x-rate-limit-api-key-remaining": "292",
+    "x-rate-limit-member-interval-ms": "10000",
+    "x-rate-limit-member-max": "375",
+    "x-rate-limit-member-remaining": "367",
+    "set-cookie": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly",
+    "x-server-time": "1657597294039",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Tue, 12 Jul 2022 03:41:34 GMT",
+    "content-encoding": "gzip",
+    "x-envoy-upstream-service-time": "171",
+    "expect-ct": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400",
+    "strict-transport-security": "max-age=63072000; preload",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "atl-traceid": "5830d18890a8b2ea",
+    "report-to": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}",
+    "nel": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}",
+    "server": "globaledge-envoy",
+    "transfer-encoding": "chunked"
+  },
+  "Response Body": "{\"id\":\"62cced6e6b988f161ba1113a\",\"name\":\"TO-DO\",\"closed\":false,\"idBoard\":\"62cced6ca392424cfbd28d5c\",\"pos\":4096,\"limits\":{}}"
+}
+04:41:34.422 { id: '62cced6e6b988f161ba1113a',
+  name: 'TO-DO',
+  closed: false,
+  idBoard: '62cced6ca392424cfbd28d5c',
+  pos: 4096,
+  limits: {} }
+04:41:35.080 DELETE https://api.trello.com/1/boards/62cced6ca392424cfbd28d5c?key=1d2cd3573c40e65bdd7795b2506aaace&token=eb4eeeff83027ad00d7f64d5de962700773433acfd02e71a3bf192f426f03194: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 8649
+      },
+      "remote": {
+        "address": "185.166.143.25",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.3",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": "AU",
+          "stateOrProvince": "New South Wales",
+          "locality": "Sydney",
+          "organization": "Atlassian Pty Ltd",
+          "commonName": "*.trello.com",
+          "alternativeNames": "DNS:*.trello.com, DNS:trello.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "DigiCert Inc",
+          "commonName": "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+        },
+        "validFrom": "Jan 24 00:00:00 2022 GMT",
+        "validTo": "Feb 24 23:59:59 2023 GMT",
+        "fingerprint": "CE:F0:82:34:F4:E7:24:CF:5F:70:56:B0:02:0F:84:60:5C:03:C4:9C",
+        "serialNumber": "0a31c7586a4506f657d7c6fd65b6f60f"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "93975934-0dfc-404d-aab9-a596bcb76c6b",
+    "host": "api.trello.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "cookie": "ajs_anonymous_id=%22d2dab629-5928-3ab4-0de2-419b436a69c7%22; atlCohort={\"bucketAll\":{\"bucketedAtUTC\":\"2022-06-23T16:51:46.890Z\",\"version\":\"2\",\"index\":95,\"bucketId\":0}}; dsc=cb82fde99308da2cbd7f3e79c3b8bb3ce78ef471715eafa44a0efc7513b05e7e; preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI"
+  },
+  "Response Headers": {
+    "x-dns-prefetch-control": "off",
+    "x-frame-options": "DENY",
+    "x-download-options": "noopen",
+    "x-permitted-cross-domain-policies": "none",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "surrogate-control": "no-store",
+    "cache-control": "max-age=0, must-revalidate, no-cache, no-store",
+    "pragma": "no-cache",
+    "expires": "Thu, 01 Jan 1970 00:00:00",
+    "x-trello-version": "1.142239.0",
+    "x-trello-environment": "Production",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET, PUT, POST, DELETE",
+    "access-control-allow-headers": "Authorization, Accept, Content-Type",
+    "access-control-expose-headers": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining",
+    "x-rate-limit-api-token-interval-ms": "10000",
+    "x-rate-limit-api-token-max": "100",
+    "x-rate-limit-api-token-remaining": "91",
+    "x-rate-limit-db-query-time-interval-ms": "600000",
+    "x-rate-limit-db-query-time-max": "7200000",
+    "x-rate-limit-db-query-time-remaining": "7199990",
+    "x-rate-limit-action-interval-ms": "3600000",
+    "x-rate-limit-action-max": "15000",
+    "x-rate-limit-action-remaining": "14999",
+    "x-rate-limit-api-key-interval-ms": "10000",
+    "x-rate-limit-api-key-max": "300",
+    "x-rate-limit-api-key-remaining": "291",
+    "x-rate-limit-member-interval-ms": "10000",
+    "x-rate-limit-member-max": "375",
+    "x-rate-limit-member-remaining": "366",
+    "set-cookie": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly",
+    "x-server-time": "1657597294759",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Tue, 12 Jul 2022 03:41:34 GMT",
+    "content-encoding": "gzip",
+    "x-envoy-upstream-service-time": "363",
+    "expect-ct": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400",
+    "strict-transport-security": "max-age=63072000; preload",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "atl-traceid": "baadfc365b4a0b40",
+    "report-to": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}",
+    "nel": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}",
+    "server": "globaledge-envoy",
+    "transfer-encoding": "chunked"
+  },
+  "Response Body": "{\"_value\":null}\n"
+}
+04:41:35.695 POST https://api.trello.com/1/boards?name=Trello%20Board&key=1d2cd3573c40e65bdd7795b2506aaace&token=eb4eeeff83027ad00d7f64d5de962700773433acfd02e71a3bf192f426f03194: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 8649
+      },
+      "remote": {
+        "address": "185.166.143.25",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.3",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": "AU",
+          "stateOrProvince": "New South Wales",
+          "locality": "Sydney",
+          "organization": "Atlassian Pty Ltd",
+          "commonName": "*.trello.com",
+          "alternativeNames": "DNS:*.trello.com, DNS:trello.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "DigiCert Inc",
+          "commonName": "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+        },
+        "validFrom": "Jan 24 00:00:00 2022 GMT",
+        "validTo": "Feb 24 23:59:59 2023 GMT",
+        "fingerprint": "CE:F0:82:34:F4:E7:24:CF:5F:70:56:B0:02:0F:84:60:5C:03:C4:9C",
+        "serialNumber": "0a31c7586a4506f657d7c6fd65b6f60f"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "53da431b-efc2-4a82-b138-7e8740075059",
+    "host": "api.trello.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "cookie": "ajs_anonymous_id=%22d2dab629-5928-3ab4-0de2-419b436a69c7%22; atlCohort={\"bucketAll\":{\"bucketedAtUTC\":\"2022-06-23T16:51:46.890Z\",\"version\":\"2\",\"index\":95,\"bucketId\":0}}; dsc=cb82fde99308da2cbd7f3e79c3b8bb3ce78ef471715eafa44a0efc7513b05e7e; preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI",
+    "content-length": "0"
+  },
+  "Response Headers": {
+    "x-dns-prefetch-control": "off",
+    "x-frame-options": "DENY",
+    "x-download-options": "noopen",
+    "x-permitted-cross-domain-policies": "none",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "surrogate-control": "no-store",
+    "cache-control": "max-age=0, must-revalidate, no-cache, no-store",
+    "pragma": "no-cache",
+    "expires": "Thu, 01 Jan 1970 00:00:00",
+    "x-trello-version": "1.142239.0",
+    "x-trello-environment": "Production",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET, PUT, POST, DELETE",
+    "access-control-allow-headers": "Authorization, Accept, Content-Type",
+    "access-control-expose-headers": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining",
+    "x-rate-limit-api-token-interval-ms": "10000",
+    "x-rate-limit-api-token-max": "100",
+    "x-rate-limit-api-token-remaining": "90",
+    "x-rate-limit-db-query-time-interval-ms": "600000",
+    "x-rate-limit-db-query-time-max": "7200000",
+    "x-rate-limit-db-query-time-remaining": "7199990",
+    "x-rate-limit-action-interval-ms": "3600000",
+    "x-rate-limit-action-max": "15000",
+    "x-rate-limit-action-remaining": "14999",
+    "x-rate-limit-api-key-interval-ms": "10000",
+    "x-rate-limit-api-key-max": "300",
+    "x-rate-limit-api-key-remaining": "290",
+    "x-rate-limit-member-interval-ms": "10000",
+    "x-rate-limit-member-max": "375",
+    "x-rate-limit-member-remaining": "365",
+    "set-cookie": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly",
+    "x-server-time": "1657597295368",
+    "x-trello-api-org-selected": "true",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Tue, 12 Jul 2022 03:41:35 GMT",
+    "content-encoding": "gzip",
+    "x-envoy-upstream-service-time": "257",
+    "expect-ct": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400",
+    "strict-transport-security": "max-age=63072000; preload",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "atl-traceid": "1ec636fa905383fb",
+    "report-to": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}",
+    "nel": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}",
+    "server": "globaledge-envoy",
+    "transfer-encoding": "chunked"
+  },
+  "Response Body": "{\"id\":\"62cced6f257abf70e8107587\",\"name\":\"Trello Board\",\"desc\":\"\",\"descData\":null,\"closed\":false,\"idOrganization\":\"62984234f7ce44066ee4ff3a\",\"idEnterprise\":null,\"pinned\":false,\"url\":\"https://trello.com/b/BuQq5rqD/trello-board\",\"shortUrl\":\"https://trello.com/b/BuQq5rqD\",\"prefs\":{\"permissionLevel\":\"private\",\"hideVotes\":false,\"voting\":\"disabled\",\"comments\":\"members\",\"invitations\":\"members\",\"selfJoin\":true,\"cardCovers\":true,\"isTemplate\":false,\"cardAging\":\"regular\",\"calendarFeedEnabled\":false,\"hiddenPluginBoardButtons\":[],\"switcherViews\":[{\"_id\":\"62cced6f257abf70e8107588\",\"viewType\":\"Board\",\"enabled\":true},{\"_id\":\"62cced6f257abf70e8107589\",\"viewType\":\"Table\",\"enabled\":true},{\"_id\":\"62cced6f257abf70e810758a\",\"viewType\":\"Calendar\",\"enabled\":false},{\"_id\":\"62cced6f257abf70e810758b\",\"viewType\":\"Dashboard\",\"enabled\":false},{\"_id\":\"62cced6f257abf70e810758c\",\"viewType\":\"Timeline\",\"enabled\":false},{\"_id\":\"62cced6f257abf70e810758d\",\"viewType\":\"Map\",\"enabled\":false}],\"background\":\"blue\",\"backgroundColor\":\"#0079BF\",\"backgroundImage\":null,\"backgroundImageScaled\":null,\"backgroundTile\":false,\"backgroundBrightness\":\"dark\",\"backgroundBottomColor\":\"#0079BF\",\"backgroundTopColor\":\"#0079BF\",\"canBePublic\":true,\"canBeEnterprise\":true,\"canBeOrg\":true,\"canBePrivate\":true,\"canInvite\":true},\"labelNames\":{\"green\":\"\",\"yellow\":\"\",\"orange\":\"\",\"red\":\"\",\"purple\":\"\",\"blue\":\"\",\"sky\":\"\",\"lime\":\"\",\"pink\":\"\",\"black\":\"\",\"green_dark\":\"\",\"yellow_dark\":\"\",\"orange_dark\":\"\",\"red_dark\":\"\",\"purple_dark\":\"\",\"blue_dark\":\"\",\"sky_dark\":\"\",\"lime_dark\":\"\",\"pink_dark\":\"\",\"black_dark\":\"\",\"green_light\":\"\",\"yellow_light\":\"\",\"orange_light\":\"\",\"red_light\":\"\",\"purple_light\":\"\",\"blue_light\":\"\",\"sky_light\":\"\",\"lime_light\":\"\",\"pink_light\":\"\",\"black_light\":\"\"},\"limits\":{}}"
+}
+04:41:36.207 POST https://api.trello.com/1/boards?name=Trello%20Board&key=1d2cd3573c40e65bdd7795b2506aaace&token=eb4eeeff83027ad00d7f64d5de962700773433acfd02e71a3bf192f426f03194: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 8649
+      },
+      "remote": {
+        "address": "185.166.143.25",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.3",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": "AU",
+          "stateOrProvince": "New South Wales",
+          "locality": "Sydney",
+          "organization": "Atlassian Pty Ltd",
+          "commonName": "*.trello.com",
+          "alternativeNames": "DNS:*.trello.com, DNS:trello.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "DigiCert Inc",
+          "commonName": "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+        },
+        "validFrom": "Jan 24 00:00:00 2022 GMT",
+        "validTo": "Feb 24 23:59:59 2023 GMT",
+        "fingerprint": "CE:F0:82:34:F4:E7:24:CF:5F:70:56:B0:02:0F:84:60:5C:03:C4:9C",
+        "serialNumber": "0a31c7586a4506f657d7c6fd65b6f60f"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "ace8d914-fe83-4efa-97e1-9837356943da",
+    "host": "api.trello.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "cookie": "ajs_anonymous_id=%22d2dab629-5928-3ab4-0de2-419b436a69c7%22; atlCohort={\"bucketAll\":{\"bucketedAtUTC\":\"2022-06-23T16:51:46.890Z\",\"version\":\"2\",\"index\":95,\"bucketId\":0}}; dsc=cb82fde99308da2cbd7f3e79c3b8bb3ce78ef471715eafa44a0efc7513b05e7e; preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI",
+    "content-length": "0"
+  },
+  "Response Headers": {
+    "x-dns-prefetch-control": "off",
+    "x-frame-options": "DENY",
+    "x-download-options": "noopen",
+    "x-permitted-cross-domain-policies": "none",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "surrogate-control": "no-store",
+    "cache-control": "max-age=0, must-revalidate, no-cache, no-store",
+    "pragma": "no-cache",
+    "expires": "Thu, 01 Jan 1970 00:00:00",
+    "x-trello-version": "1.142239.0",
+    "x-trello-environment": "Production",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET, PUT, POST, DELETE",
+    "access-control-allow-headers": "Authorization, Accept, Content-Type",
+    "access-control-expose-headers": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining",
+    "x-rate-limit-api-token-interval-ms": "10000",
+    "x-rate-limit-api-token-max": "100",
+    "x-rate-limit-api-token-remaining": "89",
+    "x-rate-limit-db-query-time-interval-ms": "600000",
+    "x-rate-limit-db-query-time-max": "7200000",
+    "x-rate-limit-db-query-time-remaining": "7199990",
+    "x-rate-limit-action-interval-ms": "3600000",
+    "x-rate-limit-action-max": "15000",
+    "x-rate-limit-action-remaining": "14999",
+    "x-rate-limit-api-key-interval-ms": "10000",
+    "x-rate-limit-api-key-max": "300",
+    "x-rate-limit-api-key-remaining": "289",
+    "x-rate-limit-member-interval-ms": "10000",
+    "x-rate-limit-member-max": "375",
+    "x-rate-limit-member-remaining": "364",
+    "set-cookie": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly",
+    "x-server-time": "1657597295964",
+    "x-trello-api-org-selected": "true",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Tue, 12 Jul 2022 03:41:35 GMT",
+    "content-encoding": "gzip",
+    "x-envoy-upstream-service-time": "255",
+    "expect-ct": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400",
+    "strict-transport-security": "max-age=63072000; preload",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "atl-traceid": "1a57ef42f96abe0b",
+    "report-to": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}",
+    "nel": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}",
+    "server": "globaledge-envoy",
+    "transfer-encoding": "chunked"
+  },
+  "Response Body": "{\"id\":\"62cced6fa67a5c18308a0e9c\",\"name\":\"Trello Board\",\"desc\":\"\",\"descData\":null,\"closed\":false,\"idOrganization\":\"62984234f7ce44066ee4ff3a\",\"idEnterprise\":null,\"pinned\":false,\"url\":\"https://trello.com/b/fekWJNqk/trello-board\",\"shortUrl\":\"https://trello.com/b/fekWJNqk\",\"prefs\":{\"permissionLevel\":\"private\",\"hideVotes\":false,\"voting\":\"disabled\",\"comments\":\"members\",\"invitations\":\"members\",\"selfJoin\":true,\"cardCovers\":true,\"isTemplate\":false,\"cardAging\":\"regular\",\"calendarFeedEnabled\":false,\"hiddenPluginBoardButtons\":[],\"switcherViews\":[{\"_id\":\"62cced6fa67a5c18308a0e9d\",\"viewType\":\"Board\",\"enabled\":true},{\"_id\":\"62cced6fa67a5c18308a0e9e\",\"viewType\":\"Table\",\"enabled\":true},{\"_id\":\"62cced6fa67a5c18308a0e9f\",\"viewType\":\"Calendar\",\"enabled\":false},{\"_id\":\"62cced6fa67a5c18308a0ea0\",\"viewType\":\"Dashboard\",\"enabled\":false},{\"_id\":\"62cced6fa67a5c18308a0ea1\",\"viewType\":\"Timeline\",\"enabled\":false},{\"_id\":\"62cced6fa67a5c18308a0ea2\",\"viewType\":\"Map\",\"enabled\":false}],\"background\":\"blue\",\"backgroundColor\":\"#0079BF\",\"backgroundImage\":null,\"backgroundImageScaled\":null,\"backgroundTile\":false,\"backgroundBrightness\":\"dark\",\"backgroundBottomColor\":\"#0079BF\",\"backgroundTopColor\":\"#0079BF\",\"canBePublic\":true,\"canBeEnterprise\":true,\"canBeOrg\":true,\"canBePrivate\":true,\"canInvite\":true},\"labelNames\":{\"green\":\"\",\"yellow\":\"\",\"orange\":\"\",\"red\":\"\",\"purple\":\"\",\"blue\":\"\",\"sky\":\"\",\"lime\":\"\",\"pink\":\"\",\"black\":\"\",\"green_dark\":\"\",\"yellow_dark\":\"\",\"orange_dark\":\"\",\"red_dark\":\"\",\"purple_dark\":\"\",\"blue_dark\":\"\",\"sky_dark\":\"\",\"lime_dark\":\"\",\"pink_dark\":\"\",\"black_dark\":\"\",\"green_light\":\"\",\"yellow_light\":\"\",\"orange_light\":\"\",\"red_light\":\"\",\"purple_light\":\"\",\"blue_light\":\"\",\"sky_light\":\"\",\"lime_light\":\"\",\"pink_light\":\"\",\"black_light\":\"\"},\"limits\":{}}"
+}
+04:41:36.933 DELETE https://api.trello.com/1/boards/62cced6fa67a5c18308a0e9c?key=1d2cd3573c40e65bdd7795b2506aaace&token=eb4eeeff83027ad00d7f64d5de962700773433acfd02e71a3bf192f426f03194: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 8649
+      },
+      "remote": {
+        "address": "185.166.143.25",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.3",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": "AU",
+          "stateOrProvince": "New South Wales",
+          "locality": "Sydney",
+          "organization": "Atlassian Pty Ltd",
+          "commonName": "*.trello.com",
+          "alternativeNames": "DNS:*.trello.com, DNS:trello.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "DigiCert Inc",
+          "commonName": "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+        },
+        "validFrom": "Jan 24 00:00:00 2022 GMT",
+        "validTo": "Feb 24 23:59:59 2023 GMT",
+        "fingerprint": "CE:F0:82:34:F4:E7:24:CF:5F:70:56:B0:02:0F:84:60:5C:03:C4:9C",
+        "serialNumber": "0a31c7586a4506f657d7c6fd65b6f60f"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "eb82499c-970a-4ae1-be04-af54961c5222",
+    "host": "api.trello.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "cookie": "ajs_anonymous_id=%22d2dab629-5928-3ab4-0de2-419b436a69c7%22; atlCohort={\"bucketAll\":{\"bucketedAtUTC\":\"2022-06-23T16:51:46.890Z\",\"version\":\"2\",\"index\":95,\"bucketId\":0}}; dsc=cb82fde99308da2cbd7f3e79c3b8bb3ce78ef471715eafa44a0efc7513b05e7e; preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI"
+  },
+  "Response Headers": {
+    "x-dns-prefetch-control": "off",
+    "x-frame-options": "DENY",
+    "x-download-options": "noopen",
+    "x-permitted-cross-domain-policies": "none",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "surrogate-control": "no-store",
+    "cache-control": "max-age=0, must-revalidate, no-cache, no-store",
+    "pragma": "no-cache",
+    "expires": "Thu, 01 Jan 1970 00:00:00",
+    "x-trello-version": "1.142239.0",
+    "x-trello-environment": "Production",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET, PUT, POST, DELETE",
+    "access-control-allow-headers": "Authorization, Accept, Content-Type",
+    "access-control-expose-headers": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining",
+    "x-rate-limit-api-token-interval-ms": "10000",
+    "x-rate-limit-api-token-max": "100",
+    "x-rate-limit-api-token-remaining": "88",
+    "x-rate-limit-db-query-time-interval-ms": "600000",
+    "x-rate-limit-db-query-time-max": "7200000",
+    "x-rate-limit-db-query-time-remaining": "7199990",
+    "x-rate-limit-action-interval-ms": "3600000",
+    "x-rate-limit-action-max": "15000",
+    "x-rate-limit-action-remaining": "14999",
+    "x-rate-limit-api-key-interval-ms": "10000",
+    "x-rate-limit-api-key-max": "300",
+    "x-rate-limit-api-key-remaining": "288",
+    "x-rate-limit-member-interval-ms": "10000",
+    "x-rate-limit-member-max": "375",
+    "x-rate-limit-member-remaining": "363",
+    "set-cookie": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly",
+    "x-server-time": "1657597296603",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Tue, 12 Jul 2022 03:41:36 GMT",
+    "content-encoding": "gzip",
+    "x-envoy-upstream-service-time": "381",
+    "expect-ct": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400",
+    "strict-transport-security": "max-age=63072000; preload",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "atl-traceid": "075d5164a65939e7",
+    "report-to": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}",
+    "nel": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}",
+    "server": "globaledge-envoy",
+    "transfer-encoding": "chunked"
+  },
+  "Response Body": "{\"_value\":null}\n"
+}
+04:41:37.333 POST https://api.trello.com/1/boards/62cced6fa67a5c18308a0e9c/lists?key=1d2cd3573c40e65bdd7795b2506aaace&token=eb4eeeff83027ad00d7f64d5de962700773433acfd02e71a3bf192f426f03194&name=TO-DO: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 8649
+      },
+      "remote": {
+        "address": "185.166.143.25",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.3",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": "AU",
+          "stateOrProvince": "New South Wales",
+          "locality": "Sydney",
+          "organization": "Atlassian Pty Ltd",
+          "commonName": "*.trello.com",
+          "alternativeNames": "DNS:*.trello.com, DNS:trello.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "DigiCert Inc",
+          "commonName": "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+        },
+        "validFrom": "Jan 24 00:00:00 2022 GMT",
+        "validTo": "Feb 24 23:59:59 2023 GMT",
+        "fingerprint": "CE:F0:82:34:F4:E7:24:CF:5F:70:56:B0:02:0F:84:60:5C:03:C4:9C",
+        "serialNumber": "0a31c7586a4506f657d7c6fd65b6f60f"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "5fb5f9d9-ff14-41f5-9db3-c67cd71c11dc",
+    "host": "api.trello.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "cookie": "ajs_anonymous_id=%22d2dab629-5928-3ab4-0de2-419b436a69c7%22; atlCohort={\"bucketAll\":{\"bucketedAtUTC\":\"2022-06-23T16:51:46.890Z\",\"version\":\"2\",\"index\":95,\"bucketId\":0}}; dsc=cb82fde99308da2cbd7f3e79c3b8bb3ce78ef471715eafa44a0efc7513b05e7e; preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI",
+    "content-length": "0"
+  },
+  "Response Headers": {
+    "x-dns-prefetch-control": "off",
+    "x-frame-options": "DENY",
+    "x-download-options": "noopen",
+    "x-permitted-cross-domain-policies": "none",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "surrogate-control": "no-store",
+    "cache-control": "no-store, no-cache, must-revalidate, proxy-revalidate",
+    "pragma": "no-cache",
+    "expires": "0",
+    "x-trello-version": "1.142239.0",
+    "x-trello-environment": "Production",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET, PUT, POST, DELETE",
+    "access-control-allow-headers": "Authorization, Accept, Content-Type",
+    "access-control-expose-headers": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining",
+    "x-rate-limit-api-token-interval-ms": "10000",
+    "x-rate-limit-api-token-max": "100",
+    "x-rate-limit-api-token-remaining": "87",
+    "x-rate-limit-db-query-time-interval-ms": "600000",
+    "x-rate-limit-db-query-time-max": "7200000",
+    "x-rate-limit-db-query-time-remaining": "7199990",
+    "x-rate-limit-action-interval-ms": "3600000",
+    "x-rate-limit-action-max": "15000",
+    "x-rate-limit-action-remaining": "14999",
+    "x-rate-limit-api-key-interval-ms": "10000",
+    "x-rate-limit-api-key-max": "300",
+    "x-rate-limit-api-key-remaining": "287",
+    "x-rate-limit-member-interval-ms": "10000",
+    "x-rate-limit-member-max": "375",
+    "x-rate-limit-member-remaining": "362",
+    "content-type": "text/plain; charset=utf-8",
+    "content-length": "37",
+    "date": "Tue, 12 Jul 2022 03:41:37 GMT",
+    "x-envoy-upstream-service-time": "115",
+    "expect-ct": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400",
+    "strict-transport-security": "max-age=63072000; preload",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "atl-traceid": "21fc14d0dd9214ce",
+    "report-to": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}",
+    "nel": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}",
+    "server": "globaledge-envoy"
+  },
+  "Response Body": "The requested resource was not found."
+}
+04:41:37.434 JSONError: Unexpected token 'T' at 1:1
+The requested resource was not found.
+^
+04:42:36.359 POST https://api.trello.com/1/boards?name=Trello%20Board&key=1d2cd3573c40e65bdd7795b2506aaace&token=eb4eeeff83027ad00d7f64d5de962700773433acfd02e71a3bf192f426f03194: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 8649
+      },
+      "remote": {
+        "address": "185.166.143.25",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.3",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": "AU",
+          "stateOrProvince": "New South Wales",
+          "locality": "Sydney",
+          "organization": "Atlassian Pty Ltd",
+          "commonName": "*.trello.com",
+          "alternativeNames": "DNS:*.trello.com, DNS:trello.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "DigiCert Inc",
+          "commonName": "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+        },
+        "validFrom": "Jan 24 00:00:00 2022 GMT",
+        "validTo": "Feb 24 23:59:59 2023 GMT",
+        "fingerprint": "CE:F0:82:34:F4:E7:24:CF:5F:70:56:B0:02:0F:84:60:5C:03:C4:9C",
+        "serialNumber": "0a31c7586a4506f657d7c6fd65b6f60f"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "4108f44b-e68b-4bac-b97a-625cc176c66d",
+    "host": "api.trello.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "cookie": "ajs_anonymous_id=%22d2dab629-5928-3ab4-0de2-419b436a69c7%22; atlCohort={\"bucketAll\":{\"bucketedAtUTC\":\"2022-06-23T16:51:46.890Z\",\"version\":\"2\",\"index\":95,\"bucketId\":0}}; dsc=cb82fde99308da2cbd7f3e79c3b8bb3ce78ef471715eafa44a0efc7513b05e7e; preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI",
+    "content-length": "0"
+  },
+  "Response Headers": {
+    "x-dns-prefetch-control": "off",
+    "x-frame-options": "DENY",
+    "x-download-options": "noopen",
+    "x-permitted-cross-domain-policies": "none",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "surrogate-control": "no-store",
+    "cache-control": "max-age=0, must-revalidate, no-cache, no-store",
+    "pragma": "no-cache",
+    "expires": "Thu, 01 Jan 1970 00:00:00",
+    "x-trello-version": "1.142239.0",
+    "x-trello-environment": "Production",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET, PUT, POST, DELETE",
+    "access-control-allow-headers": "Authorization, Accept, Content-Type",
+    "access-control-expose-headers": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining",
+    "x-rate-limit-api-token-interval-ms": "10000",
+    "x-rate-limit-api-token-max": "100",
+    "x-rate-limit-api-token-remaining": "99",
+    "x-rate-limit-db-query-time-interval-ms": "600000",
+    "x-rate-limit-db-query-time-max": "7200000",
+    "x-rate-limit-db-query-time-remaining": "7199990",
+    "x-rate-limit-action-interval-ms": "3600000",
+    "x-rate-limit-action-max": "15000",
+    "x-rate-limit-action-remaining": "14999",
+    "x-rate-limit-api-key-interval-ms": "10000",
+    "x-rate-limit-api-key-max": "300",
+    "x-rate-limit-api-key-remaining": "299",
+    "x-rate-limit-member-interval-ms": "10000",
+    "x-rate-limit-member-max": "375",
+    "x-rate-limit-member-remaining": "374",
+    "set-cookie": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly",
+    "x-server-time": "1657597356126",
+    "x-trello-api-org-selected": "true",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Tue, 12 Jul 2022 03:42:36 GMT",
+    "content-encoding": "gzip",
+    "x-envoy-upstream-service-time": "283",
+    "expect-ct": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400",
+    "strict-transport-security": "max-age=63072000; preload",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "atl-traceid": "90880101afa8334e",
+    "report-to": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}",
+    "nel": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}",
+    "server": "globaledge-envoy",
+    "transfer-encoding": "chunked"
+  },
+  "Response Body": "{\"id\":\"62ccedab41795a3996a9d522\",\"name\":\"Trello Board\",\"desc\":\"\",\"descData\":null,\"closed\":false,\"idOrganization\":\"62984234f7ce44066ee4ff3a\",\"idEnterprise\":null,\"pinned\":false,\"url\":\"https://trello.com/b/zRy2w6SL/trello-board\",\"shortUrl\":\"https://trello.com/b/zRy2w6SL\",\"prefs\":{\"permissionLevel\":\"private\",\"hideVotes\":false,\"voting\":\"disabled\",\"comments\":\"members\",\"invitations\":\"members\",\"selfJoin\":true,\"cardCovers\":true,\"isTemplate\":false,\"cardAging\":\"regular\",\"calendarFeedEnabled\":false,\"hiddenPluginBoardButtons\":[],\"switcherViews\":[{\"_id\":\"62ccedab41795a3996a9d523\",\"viewType\":\"Board\",\"enabled\":true},{\"_id\":\"62ccedab41795a3996a9d524\",\"viewType\":\"Table\",\"enabled\":true},{\"_id\":\"62ccedab41795a3996a9d525\",\"viewType\":\"Calendar\",\"enabled\":false},{\"_id\":\"62ccedab41795a3996a9d526\",\"viewType\":\"Dashboard\",\"enabled\":false},{\"_id\":\"62ccedab41795a3996a9d527\",\"viewType\":\"Timeline\",\"enabled\":false},{\"_id\":\"62ccedab41795a3996a9d528\",\"viewType\":\"Map\",\"enabled\":false}],\"background\":\"blue\",\"backgroundColor\":\"#0079BF\",\"backgroundImage\":null,\"backgroundImageScaled\":null,\"backgroundTile\":false,\"backgroundBrightness\":\"dark\",\"backgroundBottomColor\":\"#0079BF\",\"backgroundTopColor\":\"#0079BF\",\"canBePublic\":true,\"canBeEnterprise\":true,\"canBeOrg\":true,\"canBePrivate\":true,\"canInvite\":true},\"labelNames\":{\"green\":\"\",\"yellow\":\"\",\"orange\":\"\",\"red\":\"\",\"purple\":\"\",\"blue\":\"\",\"sky\":\"\",\"lime\":\"\",\"pink\":\"\",\"black\":\"\",\"green_dark\":\"\",\"yellow_dark\":\"\",\"orange_dark\":\"\",\"red_dark\":\"\",\"purple_dark\":\"\",\"blue_dark\":\"\",\"sky_dark\":\"\",\"lime_dark\":\"\",\"pink_dark\":\"\",\"black_dark\":\"\",\"green_light\":\"\",\"yellow_light\":\"\",\"orange_light\":\"\",\"red_light\":\"\",\"purple_light\":\"\",\"blue_light\":\"\",\"sky_light\":\"\",\"lime_light\":\"\",\"pink_light\":\"\",\"black_light\":\"\"},\"limits\":{}}"
+}
+04:42:37.135 DELETE https://api.trello.com/1/boards/62ccedab41795a3996a9d522?key=1d2cd3573c40e65bdd7795b2506aaace&token=eb4eeeff83027ad00d7f64d5de962700773433acfd02e71a3bf192f426f03194: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 8649
+      },
+      "remote": {
+        "address": "185.166.143.25",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.3",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": "AU",
+          "stateOrProvince": "New South Wales",
+          "locality": "Sydney",
+          "organization": "Atlassian Pty Ltd",
+          "commonName": "*.trello.com",
+          "alternativeNames": "DNS:*.trello.com, DNS:trello.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "DigiCert Inc",
+          "commonName": "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+        },
+        "validFrom": "Jan 24 00:00:00 2022 GMT",
+        "validTo": "Feb 24 23:59:59 2023 GMT",
+        "fingerprint": "CE:F0:82:34:F4:E7:24:CF:5F:70:56:B0:02:0F:84:60:5C:03:C4:9C",
+        "serialNumber": "0a31c7586a4506f657d7c6fd65b6f60f"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "3a8e42d1-bf15-4f53-b61a-a7f0c51b13c2",
+    "host": "api.trello.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "cookie": "ajs_anonymous_id=%22d2dab629-5928-3ab4-0de2-419b436a69c7%22; atlCohort={\"bucketAll\":{\"bucketedAtUTC\":\"2022-06-23T16:51:46.890Z\",\"version\":\"2\",\"index\":95,\"bucketId\":0}}; dsc=cb82fde99308da2cbd7f3e79c3b8bb3ce78ef471715eafa44a0efc7513b05e7e; preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI"
+  },
+  "Response Headers": {
+    "x-dns-prefetch-control": "off",
+    "x-frame-options": "DENY",
+    "x-download-options": "noopen",
+    "x-permitted-cross-domain-policies": "none",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "surrogate-control": "no-store",
+    "cache-control": "max-age=0, must-revalidate, no-cache, no-store",
+    "pragma": "no-cache",
+    "expires": "Thu, 01 Jan 1970 00:00:00",
+    "x-trello-version": "1.142239.0",
+    "x-trello-environment": "Production",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET, PUT, POST, DELETE",
+    "access-control-allow-headers": "Authorization, Accept, Content-Type",
+    "access-control-expose-headers": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining",
+    "x-rate-limit-api-token-interval-ms": "10000",
+    "x-rate-limit-api-token-max": "100",
+    "x-rate-limit-api-token-remaining": "98",
+    "x-rate-limit-db-query-time-interval-ms": "600000",
+    "x-rate-limit-db-query-time-max": "7200000",
+    "x-rate-limit-db-query-time-remaining": "7199990",
+    "x-rate-limit-action-interval-ms": "3600000",
+    "x-rate-limit-action-max": "15000",
+    "x-rate-limit-action-remaining": "14999",
+    "x-rate-limit-api-key-interval-ms": "10000",
+    "x-rate-limit-api-key-max": "300",
+    "x-rate-limit-api-key-remaining": "298",
+    "x-rate-limit-member-interval-ms": "10000",
+    "x-rate-limit-member-max": "375",
+    "x-rate-limit-member-remaining": "373",
+    "set-cookie": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly",
+    "x-server-time": "1657597356801",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Tue, 12 Jul 2022 03:42:36 GMT",
+    "content-encoding": "gzip",
+    "x-envoy-upstream-service-time": "406",
+    "expect-ct": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400",
+    "strict-transport-security": "max-age=63072000; preload",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "atl-traceid": "62406af9ff48c75b",
+    "report-to": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}",
+    "nel": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}",
+    "server": "globaledge-envoy",
+    "transfer-encoding": "chunked"
+  },
+  "Response Body": "{\"_value\":null}\n"
+}
+04:42:37.648 POST https://api.trello.com/1/boards?name=Trello%20Board&key=1d2cd3573c40e65bdd7795b2506aaace&token=eb4eeeff83027ad00d7f64d5de962700773433acfd02e71a3bf192f426f03194: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 8649
+      },
+      "remote": {
+        "address": "185.166.143.25",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.3",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": "AU",
+          "stateOrProvince": "New South Wales",
+          "locality": "Sydney",
+          "organization": "Atlassian Pty Ltd",
+          "commonName": "*.trello.com",
+          "alternativeNames": "DNS:*.trello.com, DNS:trello.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "DigiCert Inc",
+          "commonName": "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+        },
+        "validFrom": "Jan 24 00:00:00 2022 GMT",
+        "validTo": "Feb 24 23:59:59 2023 GMT",
+        "fingerprint": "CE:F0:82:34:F4:E7:24:CF:5F:70:56:B0:02:0F:84:60:5C:03:C4:9C",
+        "serialNumber": "0a31c7586a4506f657d7c6fd65b6f60f"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "dbb0390d-ed64-4257-b8c3-af60be935ccc",
+    "host": "api.trello.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "cookie": "ajs_anonymous_id=%22d2dab629-5928-3ab4-0de2-419b436a69c7%22; atlCohort={\"bucketAll\":{\"bucketedAtUTC\":\"2022-06-23T16:51:46.890Z\",\"version\":\"2\",\"index\":95,\"bucketId\":0}}; dsc=cb82fde99308da2cbd7f3e79c3b8bb3ce78ef471715eafa44a0efc7513b05e7e; preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI",
+    "content-length": "0"
+  },
+  "Response Headers": {
+    "x-dns-prefetch-control": "off",
+    "x-frame-options": "DENY",
+    "x-download-options": "noopen",
+    "x-permitted-cross-domain-policies": "none",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "surrogate-control": "no-store",
+    "cache-control": "max-age=0, must-revalidate, no-cache, no-store",
+    "pragma": "no-cache",
+    "expires": "Thu, 01 Jan 1970 00:00:00",
+    "x-trello-version": "1.142239.0",
+    "x-trello-environment": "Production",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET, PUT, POST, DELETE",
+    "access-control-allow-headers": "Authorization, Accept, Content-Type",
+    "access-control-expose-headers": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining",
+    "x-rate-limit-api-token-interval-ms": "10000",
+    "x-rate-limit-api-token-max": "100",
+    "x-rate-limit-api-token-remaining": "97",
+    "x-rate-limit-db-query-time-interval-ms": "600000",
+    "x-rate-limit-db-query-time-max": "7200000",
+    "x-rate-limit-db-query-time-remaining": "7199990",
+    "x-rate-limit-action-interval-ms": "3600000",
+    "x-rate-limit-action-max": "15000",
+    "x-rate-limit-action-remaining": "14999",
+    "x-rate-limit-api-key-interval-ms": "10000",
+    "x-rate-limit-api-key-max": "300",
+    "x-rate-limit-api-key-remaining": "297",
+    "x-rate-limit-member-interval-ms": "10000",
+    "x-rate-limit-member-max": "375",
+    "x-rate-limit-member-remaining": "372",
+    "set-cookie": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly",
+    "x-server-time": "1657597357412",
+    "x-trello-api-org-selected": "true",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Tue, 12 Jul 2022 03:42:37 GMT",
+    "content-encoding": "gzip",
+    "x-envoy-upstream-service-time": "264",
+    "expect-ct": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400",
+    "strict-transport-security": "max-age=63072000; preload",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "atl-traceid": "8fa3919c0dfff715",
+    "report-to": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}",
+    "nel": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}",
+    "server": "globaledge-envoy",
+    "transfer-encoding": "chunked"
+  },
+  "Response Body": "{\"id\":\"62ccedad02157f3b12ba2305\",\"name\":\"Trello Board\",\"desc\":\"\",\"descData\":null,\"closed\":false,\"idOrganization\":\"62984234f7ce44066ee4ff3a\",\"idEnterprise\":null,\"pinned\":false,\"url\":\"https://trello.com/b/peqDi61q/trello-board\",\"shortUrl\":\"https://trello.com/b/peqDi61q\",\"prefs\":{\"permissionLevel\":\"private\",\"hideVotes\":false,\"voting\":\"disabled\",\"comments\":\"members\",\"invitations\":\"members\",\"selfJoin\":true,\"cardCovers\":true,\"isTemplate\":false,\"cardAging\":\"regular\",\"calendarFeedEnabled\":false,\"hiddenPluginBoardButtons\":[],\"switcherViews\":[{\"_id\":\"62ccedad02157f3b12ba2306\",\"viewType\":\"Board\",\"enabled\":true},{\"_id\":\"62ccedad02157f3b12ba2307\",\"viewType\":\"Table\",\"enabled\":true},{\"_id\":\"62ccedad02157f3b12ba2308\",\"viewType\":\"Calendar\",\"enabled\":false},{\"_id\":\"62ccedad02157f3b12ba2309\",\"viewType\":\"Dashboard\",\"enabled\":false},{\"_id\":\"62ccedad02157f3b12ba230a\",\"viewType\":\"Timeline\",\"enabled\":false},{\"_id\":\"62ccedad02157f3b12ba230b\",\"viewType\":\"Map\",\"enabled\":false}],\"background\":\"blue\",\"backgroundColor\":\"#0079BF\",\"backgroundImage\":null,\"backgroundImageScaled\":null,\"backgroundTile\":false,\"backgroundBrightness\":\"dark\",\"backgroundBottomColor\":\"#0079BF\",\"backgroundTopColor\":\"#0079BF\",\"canBePublic\":true,\"canBeEnterprise\":true,\"canBeOrg\":true,\"canBePrivate\":true,\"canInvite\":true},\"labelNames\":{\"green\":\"\",\"yellow\":\"\",\"orange\":\"\",\"red\":\"\",\"purple\":\"\",\"blue\":\"\",\"sky\":\"\",\"lime\":\"\",\"pink\":\"\",\"black\":\"\",\"green_dark\":\"\",\"yellow_dark\":\"\",\"orange_dark\":\"\",\"red_dark\":\"\",\"purple_dark\":\"\",\"blue_dark\":\"\",\"sky_dark\":\"\",\"lime_dark\":\"\",\"pink_dark\":\"\",\"black_dark\":\"\",\"green_light\":\"\",\"yellow_light\":\"\",\"orange_light\":\"\",\"red_light\":\"\",\"purple_light\":\"\",\"blue_light\":\"\",\"sky_light\":\"\",\"lime_light\":\"\",\"pink_light\":\"\",\"black_light\":\"\"},\"limits\":{}}"
+}
+04:42:38.257 POST https://api.trello.com/1/boards?name=Trello%20Board&key=1d2cd3573c40e65bdd7795b2506aaace&token=eb4eeeff83027ad00d7f64d5de962700773433acfd02e71a3bf192f426f03194: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 8649
+      },
+      "remote": {
+        "address": "185.166.143.25",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.3",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": "AU",
+          "stateOrProvince": "New South Wales",
+          "locality": "Sydney",
+          "organization": "Atlassian Pty Ltd",
+          "commonName": "*.trello.com",
+          "alternativeNames": "DNS:*.trello.com, DNS:trello.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "DigiCert Inc",
+          "commonName": "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+        },
+        "validFrom": "Jan 24 00:00:00 2022 GMT",
+        "validTo": "Feb 24 23:59:59 2023 GMT",
+        "fingerprint": "CE:F0:82:34:F4:E7:24:CF:5F:70:56:B0:02:0F:84:60:5C:03:C4:9C",
+        "serialNumber": "0a31c7586a4506f657d7c6fd65b6f60f"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "0ea3b508-e3e2-4c27-addd-24f52ff02fa3",
+    "host": "api.trello.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "cookie": "ajs_anonymous_id=%22d2dab629-5928-3ab4-0de2-419b436a69c7%22; atlCohort={\"bucketAll\":{\"bucketedAtUTC\":\"2022-06-23T16:51:46.890Z\",\"version\":\"2\",\"index\":95,\"bucketId\":0}}; dsc=cb82fde99308da2cbd7f3e79c3b8bb3ce78ef471715eafa44a0efc7513b05e7e; preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI",
+    "content-length": "0"
+  },
+  "Response Headers": {
+    "x-dns-prefetch-control": "off",
+    "x-frame-options": "DENY",
+    "x-download-options": "noopen",
+    "x-permitted-cross-domain-policies": "none",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "surrogate-control": "no-store",
+    "cache-control": "max-age=0, must-revalidate, no-cache, no-store",
+    "pragma": "no-cache",
+    "expires": "Thu, 01 Jan 1970 00:00:00",
+    "x-trello-version": "1.142239.0",
+    "x-trello-environment": "Production",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET, PUT, POST, DELETE",
+    "access-control-allow-headers": "Authorization, Accept, Content-Type",
+    "access-control-expose-headers": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining",
+    "x-rate-limit-api-token-interval-ms": "10000",
+    "x-rate-limit-api-token-max": "100",
+    "x-rate-limit-api-token-remaining": "96",
+    "x-rate-limit-db-query-time-interval-ms": "600000",
+    "x-rate-limit-db-query-time-max": "7200000",
+    "x-rate-limit-db-query-time-remaining": "7199990",
+    "x-rate-limit-action-interval-ms": "3600000",
+    "x-rate-limit-action-max": "15000",
+    "x-rate-limit-action-remaining": "14999",
+    "x-rate-limit-api-key-interval-ms": "10000",
+    "x-rate-limit-api-key-max": "300",
+    "x-rate-limit-api-key-remaining": "296",
+    "x-rate-limit-member-interval-ms": "10000",
+    "x-rate-limit-member-max": "375",
+    "x-rate-limit-member-remaining": "371",
+    "set-cookie": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly",
+    "x-server-time": "1657597357981",
+    "x-trello-api-org-selected": "true",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Tue, 12 Jul 2022 03:42:37 GMT",
+    "content-encoding": "gzip",
+    "x-envoy-upstream-service-time": "319",
+    "expect-ct": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400",
+    "strict-transport-security": "max-age=63072000; preload",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "atl-traceid": "097026ede3f657df",
+    "report-to": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}",
+    "nel": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}",
+    "server": "globaledge-envoy",
+    "transfer-encoding": "chunked"
+  },
+  "Response Body": "{\"id\":\"62ccedaddef95b8a7321050f\",\"name\":\"Trello Board\",\"desc\":\"\",\"descData\":null,\"closed\":false,\"idOrganization\":\"62984234f7ce44066ee4ff3a\",\"idEnterprise\":null,\"pinned\":false,\"url\":\"https://trello.com/b/wX3R4BYU/trello-board\",\"shortUrl\":\"https://trello.com/b/wX3R4BYU\",\"prefs\":{\"permissionLevel\":\"private\",\"hideVotes\":false,\"voting\":\"disabled\",\"comments\":\"members\",\"invitations\":\"members\",\"selfJoin\":true,\"cardCovers\":true,\"isTemplate\":false,\"cardAging\":\"regular\",\"calendarFeedEnabled\":false,\"hiddenPluginBoardButtons\":[],\"switcherViews\":[{\"_id\":\"62ccedaddef95b8a73210510\",\"viewType\":\"Board\",\"enabled\":true},{\"_id\":\"62ccedaddef95b8a73210511\",\"viewType\":\"Table\",\"enabled\":true},{\"_id\":\"62ccedaddef95b8a73210512\",\"viewType\":\"Calendar\",\"enabled\":false},{\"_id\":\"62ccedaddef95b8a73210513\",\"viewType\":\"Dashboard\",\"enabled\":false},{\"_id\":\"62ccedaddef95b8a73210514\",\"viewType\":\"Timeline\",\"enabled\":false},{\"_id\":\"62ccedaddef95b8a73210515\",\"viewType\":\"Map\",\"enabled\":false}],\"background\":\"blue\",\"backgroundColor\":\"#0079BF\",\"backgroundImage\":null,\"backgroundImageScaled\":null,\"backgroundTile\":false,\"backgroundBrightness\":\"dark\",\"backgroundBottomColor\":\"#0079BF\",\"backgroundTopColor\":\"#0079BF\",\"canBePublic\":true,\"canBeEnterprise\":true,\"canBeOrg\":true,\"canBePrivate\":true,\"canInvite\":true},\"labelNames\":{\"green\":\"\",\"yellow\":\"\",\"orange\":\"\",\"red\":\"\",\"purple\":\"\",\"blue\":\"\",\"sky\":\"\",\"lime\":\"\",\"pink\":\"\",\"black\":\"\",\"green_dark\":\"\",\"yellow_dark\":\"\",\"orange_dark\":\"\",\"red_dark\":\"\",\"purple_dark\":\"\",\"blue_dark\":\"\",\"sky_dark\":\"\",\"lime_dark\":\"\",\"pink_dark\":\"\",\"black_dark\":\"\",\"green_light\":\"\",\"yellow_light\":\"\",\"orange_light\":\"\",\"red_light\":\"\",\"purple_light\":\"\",\"blue_light\":\"\",\"sky_light\":\"\",\"lime_light\":\"\",\"pink_light\":\"\",\"black_light\":\"\"},\"limits\":{}}"
+}
+04:42:38.671 POST https://api.trello.com/1/boards/62ccedaddef95b8a7321050f/lists?key=1d2cd3573c40e65bdd7795b2506aaace&token=eb4eeeff83027ad00d7f64d5de962700773433acfd02e71a3bf192f426f03194&name=DO-NE: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 8649
+      },
+      "remote": {
+        "address": "185.166.143.25",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.3",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": "AU",
+          "stateOrProvince": "New South Wales",
+          "locality": "Sydney",
+          "organization": "Atlassian Pty Ltd",
+          "commonName": "*.trello.com",
+          "alternativeNames": "DNS:*.trello.com, DNS:trello.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "DigiCert Inc",
+          "commonName": "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+        },
+        "validFrom": "Jan 24 00:00:00 2022 GMT",
+        "validTo": "Feb 24 23:59:59 2023 GMT",
+        "fingerprint": "CE:F0:82:34:F4:E7:24:CF:5F:70:56:B0:02:0F:84:60:5C:03:C4:9C",
+        "serialNumber": "0a31c7586a4506f657d7c6fd65b6f60f"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "d79ba4fa-35e2-4087-8338-3471bbf54974",
+    "host": "api.trello.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "cookie": "ajs_anonymous_id=%22d2dab629-5928-3ab4-0de2-419b436a69c7%22; atlCohort={\"bucketAll\":{\"bucketedAtUTC\":\"2022-06-23T16:51:46.890Z\",\"version\":\"2\",\"index\":95,\"bucketId\":0}}; dsc=cb82fde99308da2cbd7f3e79c3b8bb3ce78ef471715eafa44a0efc7513b05e7e; preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI",
+    "content-length": "0"
+  },
+  "Response Headers": {
+    "x-dns-prefetch-control": "off",
+    "x-frame-options": "DENY",
+    "x-download-options": "noopen",
+    "x-permitted-cross-domain-policies": "none",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "surrogate-control": "no-store",
+    "cache-control": "max-age=0, must-revalidate, no-cache, no-store",
+    "pragma": "no-cache",
+    "expires": "Thu, 01 Jan 1970 00:00:00",
+    "x-trello-version": "1.142239.0",
+    "x-trello-environment": "Production",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET, PUT, POST, DELETE",
+    "access-control-allow-headers": "Authorization, Accept, Content-Type",
+    "access-control-expose-headers": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining",
+    "x-rate-limit-api-token-interval-ms": "10000",
+    "x-rate-limit-api-token-max": "100",
+    "x-rate-limit-api-token-remaining": "95",
+    "x-rate-limit-db-query-time-interval-ms": "600000",
+    "x-rate-limit-db-query-time-max": "7200000",
+    "x-rate-limit-db-query-time-remaining": "7199990",
+    "x-rate-limit-action-interval-ms": "3600000",
+    "x-rate-limit-action-max": "15000",
+    "x-rate-limit-action-remaining": "14999",
+    "x-rate-limit-api-key-interval-ms": "10000",
+    "x-rate-limit-api-key-max": "300",
+    "x-rate-limit-api-key-remaining": "295",
+    "x-rate-limit-member-interval-ms": "10000",
+    "x-rate-limit-member-max": "375",
+    "x-rate-limit-member-remaining": "370",
+    "set-cookie": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly",
+    "x-server-time": "1657597358434",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Tue, 12 Jul 2022 03:42:38 GMT",
+    "content-encoding": "gzip",
+    "x-envoy-upstream-service-time": "164",
+    "expect-ct": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400",
+    "strict-transport-security": "max-age=63072000; preload",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "atl-traceid": "825c73f29b7039c5",
+    "report-to": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}",
+    "nel": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}",
+    "server": "globaledge-envoy",
+    "transfer-encoding": "chunked"
+  },
+  "Response Body": "{\"id\":\"62ccedae502e7d41400642cd\",\"name\":\"DO-NE\",\"closed\":false,\"idBoard\":\"62ccedaddef95b8a7321050f\",\"pos\":8192,\"limits\":{}}"
+}
+04:42:39.189 POST https://api.trello.com/1/boards/62ccedaddef95b8a7321050f/lists?key=1d2cd3573c40e65bdd7795b2506aaace&token=eb4eeeff83027ad00d7f64d5de962700773433acfd02e71a3bf192f426f03194&name=TO-DO: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 8649
+      },
+      "remote": {
+        "address": "185.166.143.25",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.3",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": "AU",
+          "stateOrProvince": "New South Wales",
+          "locality": "Sydney",
+          "organization": "Atlassian Pty Ltd",
+          "commonName": "*.trello.com",
+          "alternativeNames": "DNS:*.trello.com, DNS:trello.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "DigiCert Inc",
+          "commonName": "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+        },
+        "validFrom": "Jan 24 00:00:00 2022 GMT",
+        "validTo": "Feb 24 23:59:59 2023 GMT",
+        "fingerprint": "CE:F0:82:34:F4:E7:24:CF:5F:70:56:B0:02:0F:84:60:5C:03:C4:9C",
+        "serialNumber": "0a31c7586a4506f657d7c6fd65b6f60f"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "2fec8a33-b790-4c65-81c0-738c4fa4f57b",
+    "host": "api.trello.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "cookie": "ajs_anonymous_id=%22d2dab629-5928-3ab4-0de2-419b436a69c7%22; atlCohort={\"bucketAll\":{\"bucketedAtUTC\":\"2022-06-23T16:51:46.890Z\",\"version\":\"2\",\"index\":95,\"bucketId\":0}}; dsc=cb82fde99308da2cbd7f3e79c3b8bb3ce78ef471715eafa44a0efc7513b05e7e; preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI",
+    "content-length": "0"
+  },
+  "Response Headers": {
+    "x-dns-prefetch-control": "off",
+    "x-frame-options": "DENY",
+    "x-download-options": "noopen",
+    "x-permitted-cross-domain-policies": "none",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "surrogate-control": "no-store",
+    "cache-control": "max-age=0, must-revalidate, no-cache, no-store",
+    "pragma": "no-cache",
+    "expires": "Thu, 01 Jan 1970 00:00:00",
+    "x-trello-version": "1.142239.0",
+    "x-trello-environment": "Production",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET, PUT, POST, DELETE",
+    "access-control-allow-headers": "Authorization, Accept, Content-Type",
+    "access-control-expose-headers": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining",
+    "x-rate-limit-api-token-interval-ms": "10000",
+    "x-rate-limit-api-token-max": "100",
+    "x-rate-limit-api-token-remaining": "94",
+    "x-rate-limit-action-interval-ms": "3600000",
+    "x-rate-limit-action-max": "15000",
+    "x-rate-limit-action-remaining": "14999",
+    "x-rate-limit-db-query-time-interval-ms": "600000",
+    "x-rate-limit-db-query-time-max": "7200000",
+    "x-rate-limit-db-query-time-remaining": "7199990",
+    "x-rate-limit-api-key-interval-ms": "10000",
+    "x-rate-limit-api-key-max": "300",
+    "x-rate-limit-api-key-remaining": "294",
+    "x-rate-limit-member-interval-ms": "10000",
+    "x-rate-limit-member-max": "375",
+    "x-rate-limit-member-remaining": "369",
+    "set-cookie": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly",
+    "x-server-time": "1657597358857",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Tue, 12 Jul 2022 03:42:38 GMT",
+    "content-encoding": "gzip",
+    "x-envoy-upstream-service-time": "165",
+    "expect-ct": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400",
+    "strict-transport-security": "max-age=63072000; preload",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "atl-traceid": "f8ab5040e3158d14",
+    "report-to": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}",
+    "nel": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}",
+    "server": "globaledge-envoy",
+    "transfer-encoding": "chunked"
+  },
+  "Response Body": "{\"id\":\"62ccedae08282e69d630f357\",\"name\":\"TO-DO\",\"closed\":false,\"idBoard\":\"62ccedaddef95b8a7321050f\",\"pos\":4096,\"limits\":{}}"
+}
+04:42:39.244 { id: '62ccedae08282e69d630f357',
+  name: 'TO-DO',
+  closed: false,
+  idBoard: '62ccedaddef95b8a7321050f',
+  pos: 4096,
+  limits: {} }
+04:42:40.001 DELETE https://api.trello.com/1/boards/62ccedaddef95b8a7321050f?key=1d2cd3573c40e65bdd7795b2506aaace&token=eb4eeeff83027ad00d7f64d5de962700773433acfd02e71a3bf192f426f03194: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 8649
+      },
+      "remote": {
+        "address": "185.166.143.25",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.3",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": "AU",
+          "stateOrProvince": "New South Wales",
+          "locality": "Sydney",
+          "organization": "Atlassian Pty Ltd",
+          "commonName": "*.trello.com",
+          "alternativeNames": "DNS:*.trello.com, DNS:trello.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "DigiCert Inc",
+          "commonName": "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+        },
+        "validFrom": "Jan 24 00:00:00 2022 GMT",
+        "validTo": "Feb 24 23:59:59 2023 GMT",
+        "fingerprint": "CE:F0:82:34:F4:E7:24:CF:5F:70:56:B0:02:0F:84:60:5C:03:C4:9C",
+        "serialNumber": "0a31c7586a4506f657d7c6fd65b6f60f"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "17b2728a-b9b8-4550-9199-0abefa764d9b",
+    "host": "api.trello.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "cookie": "ajs_anonymous_id=%22d2dab629-5928-3ab4-0de2-419b436a69c7%22; atlCohort={\"bucketAll\":{\"bucketedAtUTC\":\"2022-06-23T16:51:46.890Z\",\"version\":\"2\",\"index\":95,\"bucketId\":0}}; dsc=cb82fde99308da2cbd7f3e79c3b8bb3ce78ef471715eafa44a0efc7513b05e7e; preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI"
+  },
+  "Response Headers": {
+    "x-dns-prefetch-control": "off",
+    "x-frame-options": "DENY",
+    "x-download-options": "noopen",
+    "x-permitted-cross-domain-policies": "none",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "surrogate-control": "no-store",
+    "cache-control": "max-age=0, must-revalidate, no-cache, no-store",
+    "pragma": "no-cache",
+    "expires": "Thu, 01 Jan 1970 00:00:00",
+    "x-trello-version": "1.142239.0",
+    "x-trello-environment": "Production",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET, PUT, POST, DELETE",
+    "access-control-allow-headers": "Authorization, Accept, Content-Type",
+    "access-control-expose-headers": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining",
+    "x-rate-limit-api-token-interval-ms": "10000",
+    "x-rate-limit-api-token-max": "100",
+    "x-rate-limit-api-token-remaining": "93",
+    "x-rate-limit-db-query-time-interval-ms": "600000",
+    "x-rate-limit-db-query-time-max": "7200000",
+    "x-rate-limit-db-query-time-remaining": "7199990",
+    "x-rate-limit-action-interval-ms": "3600000",
+    "x-rate-limit-action-max": "15000",
+    "x-rate-limit-action-remaining": "14999",
+    "x-rate-limit-api-key-interval-ms": "10000",
+    "x-rate-limit-api-key-max": "300",
+    "x-rate-limit-api-key-remaining": "293",
+    "x-rate-limit-member-interval-ms": "10000",
+    "x-rate-limit-member-max": "375",
+    "x-rate-limit-member-remaining": "368",
+    "set-cookie": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly",
+    "x-server-time": "1657597359616",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Tue, 12 Jul 2022 03:42:39 GMT",
+    "content-encoding": "gzip",
+    "x-envoy-upstream-service-time": "402",
+    "expect-ct": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400",
+    "strict-transport-security": "max-age=63072000; preload",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "atl-traceid": "6da4753d8dc0a9e5",
+    "report-to": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}",
+    "nel": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}",
+    "server": "globaledge-envoy",
+    "transfer-encoding": "chunked"
+  },
+  "Response Body": "{\"_value\":null}\n"
+}
+04:42:40.622 POST https://api.trello.com/1/boards?name=Trello%20Board&key=1d2cd3573c40e65bdd7795b2506aaace&token=eb4eeeff83027ad00d7f64d5de962700773433acfd02e71a3bf192f426f03194: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 8649
+      },
+      "remote": {
+        "address": "185.166.143.25",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.3",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": "AU",
+          "stateOrProvince": "New South Wales",
+          "locality": "Sydney",
+          "organization": "Atlassian Pty Ltd",
+          "commonName": "*.trello.com",
+          "alternativeNames": "DNS:*.trello.com, DNS:trello.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "DigiCert Inc",
+          "commonName": "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+        },
+        "validFrom": "Jan 24 00:00:00 2022 GMT",
+        "validTo": "Feb 24 23:59:59 2023 GMT",
+        "fingerprint": "CE:F0:82:34:F4:E7:24:CF:5F:70:56:B0:02:0F:84:60:5C:03:C4:9C",
+        "serialNumber": "0a31c7586a4506f657d7c6fd65b6f60f"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "f29ba69d-b612-426c-805a-7c121003cd1c",
+    "host": "api.trello.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "cookie": "ajs_anonymous_id=%22d2dab629-5928-3ab4-0de2-419b436a69c7%22; atlCohort={\"bucketAll\":{\"bucketedAtUTC\":\"2022-06-23T16:51:46.890Z\",\"version\":\"2\",\"index\":95,\"bucketId\":0}}; dsc=cb82fde99308da2cbd7f3e79c3b8bb3ce78ef471715eafa44a0efc7513b05e7e; preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI",
+    "content-length": "0"
+  },
+  "Response Headers": {
+    "x-dns-prefetch-control": "off",
+    "x-frame-options": "DENY",
+    "x-download-options": "noopen",
+    "x-permitted-cross-domain-policies": "none",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "surrogate-control": "no-store",
+    "cache-control": "max-age=0, must-revalidate, no-cache, no-store",
+    "pragma": "no-cache",
+    "expires": "Thu, 01 Jan 1970 00:00:00",
+    "x-trello-version": "1.142239.0",
+    "x-trello-environment": "Production",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET, PUT, POST, DELETE",
+    "access-control-allow-headers": "Authorization, Accept, Content-Type",
+    "access-control-expose-headers": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining",
+    "x-rate-limit-db-query-time-interval-ms": "600000",
+    "x-rate-limit-db-query-time-max": "7200000",
+    "x-rate-limit-db-query-time-remaining": "7199990",
+    "x-rate-limit-api-token-interval-ms": "10000",
+    "x-rate-limit-api-token-max": "100",
+    "x-rate-limit-api-token-remaining": "99",
+    "x-rate-limit-action-interval-ms": "3600000",
+    "x-rate-limit-action-max": "15000",
+    "x-rate-limit-action-remaining": "14999",
+    "x-rate-limit-api-key-interval-ms": "10000",
+    "x-rate-limit-api-key-max": "300",
+    "x-rate-limit-api-key-remaining": "299",
+    "x-rate-limit-member-interval-ms": "10000",
+    "x-rate-limit-member-max": "375",
+    "x-rate-limit-member-remaining": "374",
+    "set-cookie": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly",
+    "x-server-time": "1657597360298",
+    "x-trello-api-org-selected": "true",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Tue, 12 Jul 2022 03:42:40 GMT",
+    "content-encoding": "gzip",
+    "x-envoy-upstream-service-time": "266",
+    "expect-ct": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400",
+    "strict-transport-security": "max-age=63072000; preload",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "atl-traceid": "0922e33c1b12a5d5",
+    "report-to": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}",
+    "nel": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}",
+    "server": "globaledge-envoy",
+    "transfer-encoding": "chunked"
+  },
+  "Response Body": "{\"id\":\"62ccedb0788e7e831465f741\",\"name\":\"Trello Board\",\"desc\":\"\",\"descData\":null,\"closed\":false,\"idOrganization\":\"62984234f7ce44066ee4ff3a\",\"idEnterprise\":null,\"pinned\":false,\"url\":\"https://trello.com/b/dDJ0UoZj/trello-board\",\"shortUrl\":\"https://trello.com/b/dDJ0UoZj\",\"prefs\":{\"permissionLevel\":\"private\",\"hideVotes\":false,\"voting\":\"disabled\",\"comments\":\"members\",\"invitations\":\"members\",\"selfJoin\":true,\"cardCovers\":true,\"isTemplate\":false,\"cardAging\":\"regular\",\"calendarFeedEnabled\":false,\"hiddenPluginBoardButtons\":[],\"switcherViews\":[{\"_id\":\"62ccedb0788e7e831465f742\",\"viewType\":\"Board\",\"enabled\":true},{\"_id\":\"62ccedb0788e7e831465f743\",\"viewType\":\"Table\",\"enabled\":true},{\"_id\":\"62ccedb0788e7e831465f744\",\"viewType\":\"Calendar\",\"enabled\":false},{\"_id\":\"62ccedb0788e7e831465f745\",\"viewType\":\"Dashboard\",\"enabled\":false},{\"_id\":\"62ccedb0788e7e831465f746\",\"viewType\":\"Timeline\",\"enabled\":false},{\"_id\":\"62ccedb0788e7e831465f747\",\"viewType\":\"Map\",\"enabled\":false}],\"background\":\"blue\",\"backgroundColor\":\"#0079BF\",\"backgroundImage\":null,\"backgroundImageScaled\":null,\"backgroundTile\":false,\"backgroundBrightness\":\"dark\",\"backgroundBottomColor\":\"#0079BF\",\"backgroundTopColor\":\"#0079BF\",\"canBePublic\":true,\"canBeEnterprise\":true,\"canBeOrg\":true,\"canBePrivate\":true,\"canInvite\":true},\"labelNames\":{\"green\":\"\",\"yellow\":\"\",\"orange\":\"\",\"red\":\"\",\"purple\":\"\",\"blue\":\"\",\"sky\":\"\",\"lime\":\"\",\"pink\":\"\",\"black\":\"\",\"green_dark\":\"\",\"yellow_dark\":\"\",\"orange_dark\":\"\",\"red_dark\":\"\",\"purple_dark\":\"\",\"blue_dark\":\"\",\"sky_dark\":\"\",\"lime_dark\":\"\",\"pink_dark\":\"\",\"black_dark\":\"\",\"green_light\":\"\",\"yellow_light\":\"\",\"orange_light\":\"\",\"red_light\":\"\",\"purple_light\":\"\",\"blue_light\":\"\",\"sky_light\":\"\",\"lime_light\":\"\",\"pink_light\":\"\",\"black_light\":\"\"},\"limits\":{}}"
+}
+04:42:41.228 POST https://api.trello.com/1/boards?name=Trello%20Board&key=1d2cd3573c40e65bdd7795b2506aaace&token=eb4eeeff83027ad00d7f64d5de962700773433acfd02e71a3bf192f426f03194: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 8649
+      },
+      "remote": {
+        "address": "185.166.143.25",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.3",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": "AU",
+          "stateOrProvince": "New South Wales",
+          "locality": "Sydney",
+          "organization": "Atlassian Pty Ltd",
+          "commonName": "*.trello.com",
+          "alternativeNames": "DNS:*.trello.com, DNS:trello.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "DigiCert Inc",
+          "commonName": "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+        },
+        "validFrom": "Jan 24 00:00:00 2022 GMT",
+        "validTo": "Feb 24 23:59:59 2023 GMT",
+        "fingerprint": "CE:F0:82:34:F4:E7:24:CF:5F:70:56:B0:02:0F:84:60:5C:03:C4:9C",
+        "serialNumber": "0a31c7586a4506f657d7c6fd65b6f60f"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "d43279c8-4f63-4255-81e5-ca0a075c96d0",
+    "host": "api.trello.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "cookie": "ajs_anonymous_id=%22d2dab629-5928-3ab4-0de2-419b436a69c7%22; atlCohort={\"bucketAll\":{\"bucketedAtUTC\":\"2022-06-23T16:51:46.890Z\",\"version\":\"2\",\"index\":95,\"bucketId\":0}}; dsc=cb82fde99308da2cbd7f3e79c3b8bb3ce78ef471715eafa44a0efc7513b05e7e; preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI",
+    "content-length": "0"
+  },
+  "Response Headers": {
+    "x-dns-prefetch-control": "off",
+    "x-frame-options": "DENY",
+    "x-download-options": "noopen",
+    "x-permitted-cross-domain-policies": "none",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "surrogate-control": "no-store",
+    "cache-control": "max-age=0, must-revalidate, no-cache, no-store",
+    "pragma": "no-cache",
+    "expires": "Thu, 01 Jan 1970 00:00:00",
+    "x-trello-version": "1.142239.0",
+    "x-trello-environment": "Production",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET, PUT, POST, DELETE",
+    "access-control-allow-headers": "Authorization, Accept, Content-Type",
+    "access-control-expose-headers": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining",
+    "x-rate-limit-api-token-interval-ms": "10000",
+    "x-rate-limit-api-token-max": "100",
+    "x-rate-limit-api-token-remaining": "98",
+    "x-rate-limit-db-query-time-interval-ms": "600000",
+    "x-rate-limit-db-query-time-max": "7200000",
+    "x-rate-limit-db-query-time-remaining": "7199990",
+    "x-rate-limit-action-interval-ms": "3600000",
+    "x-rate-limit-action-max": "15000",
+    "x-rate-limit-action-remaining": "14999",
+    "x-rate-limit-api-key-interval-ms": "10000",
+    "x-rate-limit-api-key-max": "300",
+    "x-rate-limit-api-key-remaining": "298",
+    "x-rate-limit-member-interval-ms": "10000",
+    "x-rate-limit-member-max": "375",
+    "x-rate-limit-member-remaining": "373",
+    "set-cookie": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly",
+    "x-server-time": "1657597360924",
+    "x-trello-api-org-selected": "true",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Tue, 12 Jul 2022 03:42:40 GMT",
+    "content-encoding": "gzip",
+    "x-envoy-upstream-service-time": "265",
+    "expect-ct": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400",
+    "strict-transport-security": "max-age=63072000; preload",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "atl-traceid": "cf84acfc1bbc8cc7",
+    "report-to": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}",
+    "nel": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}",
+    "server": "globaledge-envoy",
+    "transfer-encoding": "chunked"
+  },
+  "Response Body": "{\"id\":\"62ccedb019cf985ac28e6eae\",\"name\":\"Trello Board\",\"desc\":\"\",\"descData\":null,\"closed\":false,\"idOrganization\":\"62984234f7ce44066ee4ff3a\",\"idEnterprise\":null,\"pinned\":false,\"url\":\"https://trello.com/b/MkNGf5hh/trello-board\",\"shortUrl\":\"https://trello.com/b/MkNGf5hh\",\"prefs\":{\"permissionLevel\":\"private\",\"hideVotes\":false,\"voting\":\"disabled\",\"comments\":\"members\",\"invitations\":\"members\",\"selfJoin\":true,\"cardCovers\":true,\"isTemplate\":false,\"cardAging\":\"regular\",\"calendarFeedEnabled\":false,\"hiddenPluginBoardButtons\":[],\"switcherViews\":[{\"_id\":\"62ccedb019cf985ac28e6eaf\",\"viewType\":\"Board\",\"enabled\":true},{\"_id\":\"62ccedb019cf985ac28e6eb0\",\"viewType\":\"Table\",\"enabled\":true},{\"_id\":\"62ccedb019cf985ac28e6eb1\",\"viewType\":\"Calendar\",\"enabled\":false},{\"_id\":\"62ccedb019cf985ac28e6eb2\",\"viewType\":\"Dashboard\",\"enabled\":false},{\"_id\":\"62ccedb019cf985ac28e6eb3\",\"viewType\":\"Timeline\",\"enabled\":false},{\"_id\":\"62ccedb019cf985ac28e6eb4\",\"viewType\":\"Map\",\"enabled\":false}],\"background\":\"blue\",\"backgroundColor\":\"#0079BF\",\"backgroundImage\":null,\"backgroundImageScaled\":null,\"backgroundTile\":false,\"backgroundBrightness\":\"dark\",\"backgroundBottomColor\":\"#0079BF\",\"backgroundTopColor\":\"#0079BF\",\"canBePublic\":true,\"canBeEnterprise\":true,\"canBeOrg\":true,\"canBePrivate\":true,\"canInvite\":true},\"labelNames\":{\"green\":\"\",\"yellow\":\"\",\"orange\":\"\",\"red\":\"\",\"purple\":\"\",\"blue\":\"\",\"sky\":\"\",\"lime\":\"\",\"pink\":\"\",\"black\":\"\",\"green_dark\":\"\",\"yellow_dark\":\"\",\"orange_dark\":\"\",\"red_dark\":\"\",\"purple_dark\":\"\",\"blue_dark\":\"\",\"sky_dark\":\"\",\"lime_dark\":\"\",\"pink_dark\":\"\",\"black_dark\":\"\",\"green_light\":\"\",\"yellow_light\":\"\",\"orange_light\":\"\",\"red_light\":\"\",\"purple_light\":\"\",\"blue_light\":\"\",\"sky_light\":\"\",\"lime_light\":\"\",\"pink_light\":\"\",\"black_light\":\"\"},\"limits\":{}}"
+}
+04:42:42.054 DELETE https://api.trello.com/1/boards/62ccedb019cf985ac28e6eae?key=1d2cd3573c40e65bdd7795b2506aaace&token=eb4eeeff83027ad00d7f64d5de962700773433acfd02e71a3bf192f426f03194: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 8649
+      },
+      "remote": {
+        "address": "185.166.143.25",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.3",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": "AU",
+          "stateOrProvince": "New South Wales",
+          "locality": "Sydney",
+          "organization": "Atlassian Pty Ltd",
+          "commonName": "*.trello.com",
+          "alternativeNames": "DNS:*.trello.com, DNS:trello.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "DigiCert Inc",
+          "commonName": "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+        },
+        "validFrom": "Jan 24 00:00:00 2022 GMT",
+        "validTo": "Feb 24 23:59:59 2023 GMT",
+        "fingerprint": "CE:F0:82:34:F4:E7:24:CF:5F:70:56:B0:02:0F:84:60:5C:03:C4:9C",
+        "serialNumber": "0a31c7586a4506f657d7c6fd65b6f60f"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "1d47a547-fe5b-4dbb-be9f-83a497e08fa3",
+    "host": "api.trello.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "cookie": "ajs_anonymous_id=%22d2dab629-5928-3ab4-0de2-419b436a69c7%22; atlCohort={\"bucketAll\":{\"bucketedAtUTC\":\"2022-06-23T16:51:46.890Z\",\"version\":\"2\",\"index\":95,\"bucketId\":0}}; dsc=cb82fde99308da2cbd7f3e79c3b8bb3ce78ef471715eafa44a0efc7513b05e7e; preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI"
+  },
+  "Response Headers": {
+    "x-dns-prefetch-control": "off",
+    "x-frame-options": "DENY",
+    "x-download-options": "noopen",
+    "x-permitted-cross-domain-policies": "none",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "surrogate-control": "no-store",
+    "cache-control": "max-age=0, must-revalidate, no-cache, no-store",
+    "pragma": "no-cache",
+    "expires": "Thu, 01 Jan 1970 00:00:00",
+    "x-trello-version": "1.142239.0",
+    "x-trello-environment": "Production",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET, PUT, POST, DELETE",
+    "access-control-allow-headers": "Authorization, Accept, Content-Type",
+    "access-control-expose-headers": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining",
+    "x-rate-limit-api-token-interval-ms": "10000",
+    "x-rate-limit-api-token-max": "100",
+    "x-rate-limit-api-token-remaining": "97",
+    "x-rate-limit-db-query-time-interval-ms": "600000",
+    "x-rate-limit-db-query-time-max": "7200000",
+    "x-rate-limit-db-query-time-remaining": "7199990",
+    "x-rate-limit-action-interval-ms": "3600000",
+    "x-rate-limit-action-max": "15000",
+    "x-rate-limit-action-remaining": "14999",
+    "x-rate-limit-api-key-interval-ms": "10000",
+    "x-rate-limit-api-key-max": "300",
+    "x-rate-limit-api-key-remaining": "297",
+    "x-rate-limit-member-interval-ms": "10000",
+    "x-rate-limit-member-max": "375",
+    "x-rate-limit-member-remaining": "372",
+    "set-cookie": "preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI; Path=/; HttpOnly",
+    "x-server-time": "1657597361620",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Tue, 12 Jul 2022 03:42:41 GMT",
+    "content-encoding": "gzip",
+    "x-envoy-upstream-service-time": "375",
+    "expect-ct": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400",
+    "strict-transport-security": "max-age=63072000; preload",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "atl-traceid": "7af8d32711a641de",
+    "report-to": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}",
+    "nel": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}",
+    "server": "globaledge-envoy",
+    "transfer-encoding": "chunked"
+  },
+  "Response Body": "{\"_value\":null}\n"
+}
+04:42:42.470 POST https://api.trello.com/1/boards/62ccedb019cf985ac28e6eae/lists?key=1d2cd3573c40e65bdd7795b2506aaace&token=eb4eeeff83027ad00d7f64d5de962700773433acfd02e71a3bf192f426f03194&name=TO-DO: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 8649
+      },
+      "remote": {
+        "address": "185.166.143.25",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.3",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "country": "AU",
+          "stateOrProvince": "New South Wales",
+          "locality": "Sydney",
+          "organization": "Atlassian Pty Ltd",
+          "commonName": "*.trello.com",
+          "alternativeNames": "DNS:*.trello.com, DNS:trello.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "DigiCert Inc",
+          "commonName": "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+        },
+        "validFrom": "Jan 24 00:00:00 2022 GMT",
+        "validTo": "Feb 24 23:59:59 2023 GMT",
+        "fingerprint": "CE:F0:82:34:F4:E7:24:CF:5F:70:56:B0:02:0F:84:60:5C:03:C4:9C",
+        "serialNumber": "0a31c7586a4506f657d7c6fd65b6f60f"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "7fafb04c-554d-4fa7-b9e2-0734aacbda77",
+    "host": "api.trello.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "cookie": "ajs_anonymous_id=%22d2dab629-5928-3ab4-0de2-419b436a69c7%22; atlCohort={\"bucketAll\":{\"bucketedAtUTC\":\"2022-06-23T16:51:46.890Z\",\"version\":\"2\",\"index\":95,\"bucketId\":0}}; dsc=cb82fde99308da2cbd7f3e79c3b8bb3ce78ef471715eafa44a0efc7513b05e7e; preAuthProps=s%3A6298421e780ea737b3cf1c3d%3AisEnterpriseAdmin%3Dfalse.mScqtQ1HKZ8B7DQueSuSnTYI8TvgbwAvaHJoMVgwZsI",
+    "content-length": "0"
+  },
+  "Response Headers": {
+    "x-dns-prefetch-control": "off",
+    "x-frame-options": "DENY",
+    "x-download-options": "noopen",
+    "x-permitted-cross-domain-policies": "none",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "surrogate-control": "no-store",
+    "cache-control": "no-store, no-cache, must-revalidate, proxy-revalidate",
+    "pragma": "no-cache",
+    "expires": "0",
+    "x-trello-version": "1.142239.0",
+    "x-trello-environment": "Production",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET, PUT, POST, DELETE",
+    "access-control-allow-headers": "Authorization, Accept, Content-Type",
+    "access-control-expose-headers": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining",
+    "x-rate-limit-db-query-time-interval-ms": "600000",
+    "x-rate-limit-db-query-time-max": "7200000",
+    "x-rate-limit-db-query-time-remaining": "7199990",
+    "x-rate-limit-api-token-interval-ms": "10000",
+    "x-rate-limit-api-token-max": "100",
+    "x-rate-limit-api-token-remaining": "96",
+    "x-rate-limit-action-interval-ms": "3600000",
+    "x-rate-limit-action-max": "15000",
+    "x-rate-limit-action-remaining": "14999",
+    "x-rate-limit-api-key-interval-ms": "10000",
+    "x-rate-limit-api-key-max": "300",
+    "x-rate-limit-api-key-remaining": "296",
+    "x-rate-limit-member-interval-ms": "10000",
+    "x-rate-limit-member-max": "375",
+    "x-rate-limit-member-remaining": "371",
+    "content-type": "text/plain; charset=utf-8",
+    "content-length": "37",
+    "date": "Tue, 12 Jul 2022 03:42:42 GMT",
+    "x-envoy-upstream-service-time": "122",
+    "expect-ct": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge\", max-age=86400",
+    "strict-transport-security": "max-age=63072000; preload",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "atl-traceid": "ca82d5160d237a6a",
+    "report-to": "{\"group\": \"endpoint-1\", \"max_age\": 600, \"endpoints\": [{\"url\": \"https://dj9s4kmieytgz.cloudfront.net\"}], \"include_subdomains\": true}",
+    "nel": "{\"report_to\": \"endpoint-1\", \"max_age\": 600, \"include_subdomains\": true, \"failure_fraction\": 0.001}",
+    "server": "globaledge-envoy"
+  },
+  "Response Body": "The requested resource was not found."
+}
+04:42:42.510 JSONError: Unexpected token 'T' at 1:1
+The requested resource was not found.
+^
