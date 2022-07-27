@@ -1,0 +1,610 @@
+05:01:48.530 GET https://simple-grocery-store-api.glitch.me/: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 4245
+      },
+      "remote": {
+        "address": "52.22.91.148",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "ECDHE-RSA-AES128-GCM-SHA256",
+        "standardName": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.2",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "commonName": "glitch.com",
+          "alternativeNames": "DNS:glitch.com, DNS:*.gomix.me, DNS:gomix.com, DNS:gomix.me, DNS:glitch.me, DNS:*.glitch.com, DNS:*.gomix.com, DNS:*.glitch.me"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "Amazon",
+          "organizationalUnit": "Server CA 1B",
+          "commonName": "Amazon"
+        },
+        "validFrom": "Feb  1 00:00:00 2022 GMT",
+        "validTo": "Mar  2 23:59:59 2023 GMT",
+        "fingerprint": "AB:49:CE:C1:43:DF:BC:78:1A:54:F4:4F:6F:79:74:B5:52:EE:59:68",
+        "serialNumber": "063f3abd830968b6cf254c729b2a314d"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "9c545f79-5cba-4766-aec7-0982ff88b429",
+    "host": "simple-grocery-store-api.glitch.me",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "date": "Wed, 27 Jul 2022 04:01:48 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "39",
+    "connection": "keep-alive",
+    "x-powered-by": "Express",
+    "etag": "W/\"27-gnXDxYpP/dFuYKbJhtHWD9HYAo4\""
+  },
+  "Response Body": "{\"message\":\"Simple Grocery Store API.\"}"
+}
+05:04:08.721 GET https://simple-grocery-store-api.glitch.me/: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 4245
+      },
+      "remote": {
+        "address": "52.22.91.148",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "ECDHE-RSA-AES128-GCM-SHA256",
+        "standardName": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.2",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "commonName": "glitch.com",
+          "alternativeNames": "DNS:glitch.com, DNS:*.gomix.me, DNS:gomix.com, DNS:gomix.me, DNS:glitch.me, DNS:*.glitch.com, DNS:*.gomix.com, DNS:*.glitch.me"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "Amazon",
+          "organizationalUnit": "Server CA 1B",
+          "commonName": "Amazon"
+        },
+        "validFrom": "Feb  1 00:00:00 2022 GMT",
+        "validTo": "Mar  2 23:59:59 2023 GMT",
+        "fingerprint": "AB:49:CE:C1:43:DF:BC:78:1A:54:F4:4F:6F:79:74:B5:52:EE:59:68",
+        "serialNumber": "063f3abd830968b6cf254c729b2a314d"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "92f91547-55c1-4a06-8bbf-0bfccb1d261a",
+    "host": "simple-grocery-store-api.glitch.me",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "date": "Wed, 27 Jul 2022 04:04:08 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "39",
+    "connection": "keep-alive",
+    "x-powered-by": "Express",
+    "etag": "W/\"27-gnXDxYpP/dFuYKbJhtHWD9HYAo4\""
+  },
+  "Response Body": "{\"message\":\"Simple Grocery Store API.\"}"
+}
+05:04:33.234 GET https://simple-grocery-store-api.glitch.me/products: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 4245
+      },
+      "remote": {
+        "address": "52.22.91.148",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "ECDHE-RSA-AES128-GCM-SHA256",
+        "standardName": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.2",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "commonName": "glitch.com",
+          "alternativeNames": "DNS:glitch.com, DNS:*.gomix.me, DNS:gomix.com, DNS:gomix.me, DNS:glitch.me, DNS:*.glitch.com, DNS:*.gomix.com, DNS:*.glitch.me"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "Amazon",
+          "organizationalUnit": "Server CA 1B",
+          "commonName": "Amazon"
+        },
+        "validFrom": "Feb  1 00:00:00 2022 GMT",
+        "validTo": "Mar  2 23:59:59 2023 GMT",
+        "fingerprint": "AB:49:CE:C1:43:DF:BC:78:1A:54:F4:4F:6F:79:74:B5:52:EE:59:68",
+        "serialNumber": "063f3abd830968b6cf254c729b2a314d"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "3407faf0-2254-434b-b816-2de61c199fff",
+    "host": "simple-grocery-store-api.glitch.me",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "date": "Wed, 27 Jul 2022 04:04:32 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "1716",
+    "connection": "keep-alive",
+    "x-powered-by": "Express",
+    "etag": "W/\"6b4-RVZTrjCoC03tQFslV/oF2zXZ8Wo\""
+  },
+  "Response Body": "[{\"id\":4643,\"category\":\"coffee\",\"name\":\"Starbucks Coffee Variety Pack, 100% Arabica\",\"inStock\":true},{\"id\":4646,\"category\":\"coffee\",\"name\":\"Ethical Bean Medium Dark Roast, Espresso\",\"inStock\":true},{\"id\":4641,\"category\":\"coffee\",\"name\":\"Don Francisco Colombia Supremo Medium Roast\",\"inStock\":true},{\"id\":1225,\"category\":\"fresh-produce\",\"name\":\"1/2 in. Brushless Hammer Drill\",\"inStock\":true},{\"id\":3674,\"category\":\"fresh-produce\",\"name\":\"20V Max Cordless Drill Combo Kit\",\"inStock\":true},{\"id\":2585,\"category\":\"fresh-produce\",\"name\":\"Green Cabbage Organic\",\"inStock\":true},{\"id\":5851,\"category\":\"fresh-produce\",\"name\":\"Cucumber Organic\",\"inStock\":false},{\"id\":8739,\"category\":\"fresh-produce\",\"name\":\"Fresh Spinach Organic\",\"inStock\":true},{\"id\":2177,\"category\":\"meat-seafood\",\"name\":\"Cosco Three Step Steel Platform\",\"inStock\":true},{\"id\":1709,\"category\":\"meat-seafood\",\"name\":\"Beef Choice Angus Ribeye Steak\",\"inStock\":true},{\"id\":1709,\"category\":\"meat-seafood\",\"name\":\"Angus Steak Burgers\",\"inStock\":true},{\"id\":7395,\"category\":\"meat-seafood\",\"name\":\"Boneless Skinless Chicken Breasts\",\"inStock\":true},{\"id\":8554,\"category\":\"candy\",\"name\":\"Kinder Joy Eggs\",\"inStock\":true},{\"id\":6483,\"category\":\"candy\",\"name\":\"Cadbury Milk Chocolate\",\"inStock\":true},{\"id\":5774,\"category\":\"candy\",\"name\":\"HERSHEY'S, Milk Chocolate Almond\",\"inStock\":true},{\"id\":8753,\"category\":\"dairy\",\"name\":\"Reduced Fat Milk\",\"inStock\":true},{\"id\":9482,\"category\":\"dairy\",\"name\":\"Whole Milk\",\"inStock\":true},{\"id\":5477,\"category\":\"dairy\",\"name\":\"Cream Cheese\",\"inStock\":true},{\"id\":5478,\"category\":\"dairy\",\"name\":\"Low Fat Vanilla Yogurt\",\"inStock\":true},{\"id\":4875,\"category\":\"bread-bakery\",\"name\":\"2800 Watt Inverter Generator\",\"inStock\":true}]"
+}
+05:06:31.308 GET https://simple-grocery-store-api.glitch.me/products?category=dairy: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 4245
+      },
+      "remote": {
+        "address": "52.22.91.148",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "ECDHE-RSA-AES128-GCM-SHA256",
+        "standardName": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.2",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "commonName": "glitch.com",
+          "alternativeNames": "DNS:glitch.com, DNS:*.gomix.me, DNS:gomix.com, DNS:gomix.me, DNS:glitch.me, DNS:*.glitch.com, DNS:*.gomix.com, DNS:*.glitch.me"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "Amazon",
+          "organizationalUnit": "Server CA 1B",
+          "commonName": "Amazon"
+        },
+        "validFrom": "Feb  1 00:00:00 2022 GMT",
+        "validTo": "Mar  2 23:59:59 2023 GMT",
+        "fingerprint": "AB:49:CE:C1:43:DF:BC:78:1A:54:F4:4F:6F:79:74:B5:52:EE:59:68",
+        "serialNumber": "063f3abd830968b6cf254c729b2a314d"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "6127c426-1d04-4536-a9ef-3e863dc1d0ef",
+    "host": "simple-grocery-store-api.glitch.me",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "date": "Wed, 27 Jul 2022 04:06:31 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "285",
+    "connection": "keep-alive",
+    "x-powered-by": "Express",
+    "etag": "W/\"11d-SQ5zHjRrnQK8VRaEjX/df0A74Co\""
+  },
+  "Response Body": "[{\"id\":8753,\"category\":\"dairy\",\"name\":\"Reduced Fat Milk\",\"inStock\":true},{\"id\":9482,\"category\":\"dairy\",\"name\":\"Whole Milk\",\"inStock\":true},{\"id\":5477,\"category\":\"dairy\",\"name\":\"Cream Cheese\",\"inStock\":true},{\"id\":5478,\"category\":\"dairy\",\"name\":\"Low Fat Vanilla Yogurt\",\"inStock\":true}]"
+}
+05:07:10.211 GET https://simple-grocery-store-api.glitch.me/products?results=10: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 4245
+      },
+      "remote": {
+        "address": "52.22.91.148",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "ECDHE-RSA-AES128-GCM-SHA256",
+        "standardName": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.2",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "commonName": "glitch.com",
+          "alternativeNames": "DNS:glitch.com, DNS:*.gomix.me, DNS:gomix.com, DNS:gomix.me, DNS:glitch.me, DNS:*.glitch.com, DNS:*.gomix.com, DNS:*.glitch.me"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "Amazon",
+          "organizationalUnit": "Server CA 1B",
+          "commonName": "Amazon"
+        },
+        "validFrom": "Feb  1 00:00:00 2022 GMT",
+        "validTo": "Mar  2 23:59:59 2023 GMT",
+        "fingerprint": "AB:49:CE:C1:43:DF:BC:78:1A:54:F4:4F:6F:79:74:B5:52:EE:59:68",
+        "serialNumber": "063f3abd830968b6cf254c729b2a314d"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "125ca913-cb31-43e7-a2e5-b222231e17f7",
+    "host": "simple-grocery-store-api.glitch.me",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "date": "Wed, 27 Jul 2022 04:07:10 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "926",
+    "connection": "keep-alive",
+    "x-powered-by": "Express",
+    "etag": "W/\"39e-dE0tKLTk1ZO8XXMqZOOy/rLLgoU\""
+  },
+  "Response Body": "[{\"id\":4643,\"category\":\"coffee\",\"name\":\"Starbucks Coffee Variety Pack, 100% Arabica\",\"inStock\":true},{\"id\":4646,\"category\":\"coffee\",\"name\":\"Ethical Bean Medium Dark Roast, Espresso\",\"inStock\":true},{\"id\":4641,\"category\":\"coffee\",\"name\":\"Don Francisco Colombia Supremo Medium Roast\",\"inStock\":true},{\"id\":1225,\"category\":\"fresh-produce\",\"name\":\"1/2 in. Brushless Hammer Drill\",\"inStock\":true},{\"id\":3674,\"category\":\"fresh-produce\",\"name\":\"20V Max Cordless Drill Combo Kit\",\"inStock\":true},{\"id\":2585,\"category\":\"fresh-produce\",\"name\":\"Green Cabbage Organic\",\"inStock\":true},{\"id\":5851,\"category\":\"fresh-produce\",\"name\":\"Cucumber Organic\",\"inStock\":false},{\"id\":8739,\"category\":\"fresh-produce\",\"name\":\"Fresh Spinach Organic\",\"inStock\":true},{\"id\":2177,\"category\":\"meat-seafood\",\"name\":\"Cosco Three Step Steel Platform\",\"inStock\":true},{\"id\":1709,\"category\":\"meat-seafood\",\"name\":\"Beef Choice Angus Ribeye Steak\",\"inStock\":true}]"
+}
+05:07:26.463 GET https://simple-grocery-store-api.glitch.me/products?category=dairy&results=10: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 4245
+      },
+      "remote": {
+        "address": "52.22.91.148",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "ECDHE-RSA-AES128-GCM-SHA256",
+        "standardName": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.2",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "commonName": "glitch.com",
+          "alternativeNames": "DNS:glitch.com, DNS:*.gomix.me, DNS:gomix.com, DNS:gomix.me, DNS:glitch.me, DNS:*.glitch.com, DNS:*.gomix.com, DNS:*.glitch.me"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "Amazon",
+          "organizationalUnit": "Server CA 1B",
+          "commonName": "Amazon"
+        },
+        "validFrom": "Feb  1 00:00:00 2022 GMT",
+        "validTo": "Mar  2 23:59:59 2023 GMT",
+        "fingerprint": "AB:49:CE:C1:43:DF:BC:78:1A:54:F4:4F:6F:79:74:B5:52:EE:59:68",
+        "serialNumber": "063f3abd830968b6cf254c729b2a314d"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "57a8ff2b-6132-454f-aa6e-3613313c9448",
+    "host": "simple-grocery-store-api.glitch.me",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "date": "Wed, 27 Jul 2022 04:07:26 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "285",
+    "connection": "keep-alive",
+    "x-powered-by": "Express",
+    "etag": "W/\"11d-SQ5zHjRrnQK8VRaEjX/df0A74Co\""
+  },
+  "Response Body": "[{\"id\":8753,\"category\":\"dairy\",\"name\":\"Reduced Fat Milk\",\"inStock\":true},{\"id\":9482,\"category\":\"dairy\",\"name\":\"Whole Milk\",\"inStock\":true},{\"id\":5477,\"category\":\"dairy\",\"name\":\"Cream Cheese\",\"inStock\":true},{\"id\":5478,\"category\":\"dairy\",\"name\":\"Low Fat Vanilla Yogurt\",\"inStock\":true}]"
+}
+05:09:55.606 GET https://simple-grocery-store-api.glitch.me/products?available=yes: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 4245
+      },
+      "remote": {
+        "address": "52.22.91.148",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "ECDHE-RSA-AES128-GCM-SHA256",
+        "standardName": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.2",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "commonName": "glitch.com",
+          "alternativeNames": "DNS:glitch.com, DNS:*.gomix.me, DNS:gomix.com, DNS:gomix.me, DNS:glitch.me, DNS:*.glitch.com, DNS:*.gomix.com, DNS:*.glitch.me"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "Amazon",
+          "organizationalUnit": "Server CA 1B",
+          "commonName": "Amazon"
+        },
+        "validFrom": "Feb  1 00:00:00 2022 GMT",
+        "validTo": "Mar  2 23:59:59 2023 GMT",
+        "fingerprint": "AB:49:CE:C1:43:DF:BC:78:1A:54:F4:4F:6F:79:74:B5:52:EE:59:68",
+        "serialNumber": "063f3abd830968b6cf254c729b2a314d"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "f2bfb7f9-b143-4dcf-93cc-d480aa8da871",
+    "host": "simple-grocery-store-api.glitch.me",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "date": "Wed, 27 Jul 2022 04:09:55 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "86",
+    "connection": "keep-alive",
+    "x-powered-by": "Express",
+    "etag": "W/\"56-yUGE/+sUTnLA3nw63CqhwvNiFf0\""
+  },
+  "Response Body": "{\"error\":\"Invalid value for query parameter 'available'. Must be one of: true, false\"}"
+}
+05:10:10.699 GET https://simple-grocery-store-api.glitch.me/products?available=true: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 4245
+      },
+      "remote": {
+        "address": "52.22.91.148",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "ECDHE-RSA-AES128-GCM-SHA256",
+        "standardName": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.2",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "commonName": "glitch.com",
+          "alternativeNames": "DNS:glitch.com, DNS:*.gomix.me, DNS:gomix.com, DNS:gomix.me, DNS:glitch.me, DNS:*.glitch.com, DNS:*.gomix.com, DNS:*.glitch.me"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "Amazon",
+          "organizationalUnit": "Server CA 1B",
+          "commonName": "Amazon"
+        },
+        "validFrom": "Feb  1 00:00:00 2022 GMT",
+        "validTo": "Mar  2 23:59:59 2023 GMT",
+        "fingerprint": "AB:49:CE:C1:43:DF:BC:78:1A:54:F4:4F:6F:79:74:B5:52:EE:59:68",
+        "serialNumber": "063f3abd830968b6cf254c729b2a314d"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "8d478ee3-c387-48c9-b5f8-ddd0dd20887d",
+    "host": "simple-grocery-store-api.glitch.me",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "date": "Wed, 27 Jul 2022 04:10:10 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "1713",
+    "connection": "keep-alive",
+    "x-powered-by": "Express",
+    "etag": "W/\"6b1-0rfUa0PdtZWu2Exuv/dcCfZDJqY\""
+  },
+  "Response Body": "[{\"id\":4643,\"category\":\"coffee\",\"name\":\"Starbucks Coffee Variety Pack, 100% Arabica\",\"inStock\":true},{\"id\":4646,\"category\":\"coffee\",\"name\":\"Ethical Bean Medium Dark Roast, Espresso\",\"inStock\":true},{\"id\":4641,\"category\":\"coffee\",\"name\":\"Don Francisco Colombia Supremo Medium Roast\",\"inStock\":true},{\"id\":1225,\"category\":\"fresh-produce\",\"name\":\"1/2 in. Brushless Hammer Drill\",\"inStock\":true},{\"id\":3674,\"category\":\"fresh-produce\",\"name\":\"20V Max Cordless Drill Combo Kit\",\"inStock\":true},{\"id\":2585,\"category\":\"fresh-produce\",\"name\":\"Green Cabbage Organic\",\"inStock\":true},{\"id\":8739,\"category\":\"fresh-produce\",\"name\":\"Fresh Spinach Organic\",\"inStock\":true},{\"id\":2177,\"category\":\"meat-seafood\",\"name\":\"Cosco Three Step Steel Platform\",\"inStock\":true},{\"id\":1709,\"category\":\"meat-seafood\",\"name\":\"Beef Choice Angus Ribeye Steak\",\"inStock\":true},{\"id\":1709,\"category\":\"meat-seafood\",\"name\":\"Angus Steak Burgers\",\"inStock\":true},{\"id\":7395,\"category\":\"meat-seafood\",\"name\":\"Boneless Skinless Chicken Breasts\",\"inStock\":true},{\"id\":8554,\"category\":\"candy\",\"name\":\"Kinder Joy Eggs\",\"inStock\":true},{\"id\":6483,\"category\":\"candy\",\"name\":\"Cadbury Milk Chocolate\",\"inStock\":true},{\"id\":5774,\"category\":\"candy\",\"name\":\"HERSHEY'S, Milk Chocolate Almond\",\"inStock\":true},{\"id\":8753,\"category\":\"dairy\",\"name\":\"Reduced Fat Milk\",\"inStock\":true},{\"id\":9482,\"category\":\"dairy\",\"name\":\"Whole Milk\",\"inStock\":true},{\"id\":5477,\"category\":\"dairy\",\"name\":\"Cream Cheese\",\"inStock\":true},{\"id\":5478,\"category\":\"dairy\",\"name\":\"Low Fat Vanilla Yogurt\",\"inStock\":true},{\"id\":4875,\"category\":\"bread-bakery\",\"name\":\"2800 Watt Inverter Generator\",\"inStock\":true},{\"id\":5499,\"category\":\"bread-bakery\",\"name\":\"Sourdough Bread\",\"inStock\":true}]"
+}
+05:10:22.315 GET https://simple-grocery-store-api.glitch.me/products: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 4245
+      },
+      "remote": {
+        "address": "52.22.91.148",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "ECDHE-RSA-AES128-GCM-SHA256",
+        "standardName": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.2",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "commonName": "glitch.com",
+          "alternativeNames": "DNS:glitch.com, DNS:*.gomix.me, DNS:gomix.com, DNS:gomix.me, DNS:glitch.me, DNS:*.glitch.com, DNS:*.gomix.com, DNS:*.glitch.me"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "Amazon",
+          "organizationalUnit": "Server CA 1B",
+          "commonName": "Amazon"
+        },
+        "validFrom": "Feb  1 00:00:00 2022 GMT",
+        "validTo": "Mar  2 23:59:59 2023 GMT",
+        "fingerprint": "AB:49:CE:C1:43:DF:BC:78:1A:54:F4:4F:6F:79:74:B5:52:EE:59:68",
+        "serialNumber": "063f3abd830968b6cf254c729b2a314d"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "40cb8341-ab31-43a5-9cc9-b9f9d7616d79",
+    "host": "simple-grocery-store-api.glitch.me",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "date": "Wed, 27 Jul 2022 04:10:22 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "1716",
+    "connection": "keep-alive",
+    "x-powered-by": "Express",
+    "etag": "W/\"6b4-RVZTrjCoC03tQFslV/oF2zXZ8Wo\""
+  },
+  "Response Body": "[{\"id\":4643,\"category\":\"coffee\",\"name\":\"Starbucks Coffee Variety Pack, 100% Arabica\",\"inStock\":true},{\"id\":4646,\"category\":\"coffee\",\"name\":\"Ethical Bean Medium Dark Roast, Espresso\",\"inStock\":true},{\"id\":4641,\"category\":\"coffee\",\"name\":\"Don Francisco Colombia Supremo Medium Roast\",\"inStock\":true},{\"id\":1225,\"category\":\"fresh-produce\",\"name\":\"1/2 in. Brushless Hammer Drill\",\"inStock\":true},{\"id\":3674,\"category\":\"fresh-produce\",\"name\":\"20V Max Cordless Drill Combo Kit\",\"inStock\":true},{\"id\":2585,\"category\":\"fresh-produce\",\"name\":\"Green Cabbage Organic\",\"inStock\":true},{\"id\":5851,\"category\":\"fresh-produce\",\"name\":\"Cucumber Organic\",\"inStock\":false},{\"id\":8739,\"category\":\"fresh-produce\",\"name\":\"Fresh Spinach Organic\",\"inStock\":true},{\"id\":2177,\"category\":\"meat-seafood\",\"name\":\"Cosco Three Step Steel Platform\",\"inStock\":true},{\"id\":1709,\"category\":\"meat-seafood\",\"name\":\"Beef Choice Angus Ribeye Steak\",\"inStock\":true},{\"id\":1709,\"category\":\"meat-seafood\",\"name\":\"Angus Steak Burgers\",\"inStock\":true},{\"id\":7395,\"category\":\"meat-seafood\",\"name\":\"Boneless Skinless Chicken Breasts\",\"inStock\":true},{\"id\":8554,\"category\":\"candy\",\"name\":\"Kinder Joy Eggs\",\"inStock\":true},{\"id\":6483,\"category\":\"candy\",\"name\":\"Cadbury Milk Chocolate\",\"inStock\":true},{\"id\":5774,\"category\":\"candy\",\"name\":\"HERSHEY'S, Milk Chocolate Almond\",\"inStock\":true},{\"id\":8753,\"category\":\"dairy\",\"name\":\"Reduced Fat Milk\",\"inStock\":true},{\"id\":9482,\"category\":\"dairy\",\"name\":\"Whole Milk\",\"inStock\":true},{\"id\":5477,\"category\":\"dairy\",\"name\":\"Cream Cheese\",\"inStock\":true},{\"id\":5478,\"category\":\"dairy\",\"name\":\"Low Fat Vanilla Yogurt\",\"inStock\":true},{\"id\":4875,\"category\":\"bread-bakery\",\"name\":\"2800 Watt Inverter Generator\",\"inStock\":true}]"
+}
+05:11:27.817 GET https://simple-grocery-store-api.glitch.me/status: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "172.20.10.3",
+        "family": "IPv4",
+        "port": 4245
+      },
+      "remote": {
+        "address": "52.22.91.148",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "ECDHE-RSA-AES128-GCM-SHA256",
+        "standardName": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.2",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "commonName": "glitch.com",
+          "alternativeNames": "DNS:glitch.com, DNS:*.gomix.me, DNS:gomix.com, DNS:gomix.me, DNS:glitch.me, DNS:*.glitch.com, DNS:*.gomix.com, DNS:*.glitch.me"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "Amazon",
+          "organizationalUnit": "Server CA 1B",
+          "commonName": "Amazon"
+        },
+        "validFrom": "Feb  1 00:00:00 2022 GMT",
+        "validTo": "Mar  2 23:59:59 2023 GMT",
+        "fingerprint": "AB:49:CE:C1:43:DF:BC:78:1A:54:F4:4F:6F:79:74:B5:52:EE:59:68",
+        "serialNumber": "063f3abd830968b6cf254c729b2a314d"
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.29.0",
+    "accept": "*/*",
+    "postman-token": "915ab054-2fef-4410-a466-f6927845e760",
+    "host": "simple-grocery-store-api.glitch.me",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "date": "Wed, 27 Jul 2022 04:11:27 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "15",
+    "connection": "keep-alive",
+    "x-powered-by": "Express",
+    "etag": "W/\"f-RQ8OySFd+KR+AvtJ7qImjtT0D/0\""
+  },
+  "Response Body": "{\"status\":\"UP\"}"
+}
